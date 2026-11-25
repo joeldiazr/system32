@@ -100,7 +100,8 @@ function pixelmapFor(p) {
       rig: 'cross', label: 'TECHNO-CROSS', canvas: [1008, 784], width: 14, cabinet: 112, bpm: 140, hardware: spec.hardware,
       image: rel(p.pixelmapImage || spec.pixelmapUrl),
       slices: spec.slices.map((s) => ({ name: name(s), ...s.pxRect, physical: s.physical })),
-      playlist: vids((p.gallery || []).filter((g) => g.type === 'video').map((g) => rel(g.src))),
+      // su stagePlaylist trae solo los clips hechos para la cruz; si no hay, los videos de la galería
+      playlist: vids(pl.length ? pl : (p.gallery || []).filter((g) => g.type === 'video').map((g) => rel(g.src))),
     };
   }
   if (p.stageRig === 'semana-mainstage') {

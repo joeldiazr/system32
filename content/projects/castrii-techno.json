@@ -45,6 +45,50 @@
     },
     {
       "type": "video",
+      "src": "media/stages/castrii/castrii_letras_smear.mp4",
+      "poster": "media/stages/castrii/castrii_letras_smear.jpg",
+      "w": 1008,
+      "h": 784,
+      "caption": {
+        "es": "Castrii — Tipografía Cinética Smear en Cruz (1008×784)",
+        "en": "Castrii — Kinetic Smear Typography in Cross (1008×784)"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/castrii/castrii_random_letras.mp4",
+      "poster": "media/stages/castrii/castrii_random_letras.jpg",
+      "w": 1008,
+      "h": 784,
+      "caption": {
+        "es": "Castrii — Letras Random Glitch en Cruz (1008×784)",
+        "en": "Castrii — Random Glitch Letters in Cross (1008×784)"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/castrii/logo_castrii_cruz.mp4",
+      "poster": "media/stages/castrii/logo_castrii_cruz.jpg",
+      "w": 1008,
+      "h": 784,
+      "caption": {
+        "es": "Logo Castrii Animado en Cruz (1008×784)",
+        "en": "Castrii Cross Animated Logo (1008×784)"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/castrii/logo_castrii_blanco.mp4",
+      "poster": "media/stages/castrii/logo_castrii_blanco.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": {
+        "es": "Logo Castrii Blanco — Animación HD (ProRes 4444 Alpha)",
+        "en": "Castrii White Logo — HD Animation (ProRes 4444 Alpha)"
+      }
+    },
+    {
+      "type": "video",
       "src": "media/stages/castrii/item_01.mp4",
       "poster": "media/stages/castrii/item_01.poster.jpg",
       "w": 1008,
@@ -63,17 +107,6 @@
       "caption": {
         "es": "Cadenas sobre la Cruz — Loop 3D",
         "en": "Chains Over Cross — 3D Loop"
-      }
-    },
-    {
-      "type": "video",
-      "src": "media/stages/castrii/item_03.mp4",
-      "poster": "media/stages/castrii/item_03.poster.jpg",
-      "w": 1008,
-      "h": 782,
-      "caption": {
-        "es": "Logo Castrii Animado en Cruz",
-        "en": "Castrii Cross Animated Logo"
       }
     },
     {
@@ -159,8 +192,10 @@
     ],
     "playlist": [
       "media/stages/castrii/item_01.mp4",
+      "media/stages/castrii/castrii_letras_smear.mp4",
+      "media/stages/castrii/castrii_random_letras.mp4",
+      "media/stages/castrii/logo_castrii_cruz.mp4",
       "media/stages/castrii/item_02.mp4",
-      "media/stages/castrii/item_03.mp4",
       "media/stages/castrii/item_04.mp4",
       "media/stages/castrii/item_05.mp4",
       "media/stages/castrii/item_06.mp4"
