@@ -1,0 +1,332 @@
+{
+  "id": "semana-juventud",
+  "world": "stage",
+  "order": 4,
+  "title": "SEMANA DE LA JUVENTUD - MEDAYOUNG FEST",
+  "year": "2026",
+  "role": {
+    "es": "Visuales Escenario Principal & Mapping Multi-Pantalla",
+    "en": "Mainstage Visuals & Multi-Screen LED Mapping"
+  },
+  "tools": [
+    "Resolume Arena (NovaPro UHD Jr)",
+    "After Effects",
+    "Absen PL4.8 XL",
+    "2496×2080 Pixelmap"
+  ],
+  "summary": {
+    "es": "Sistema visual multi-pantalla sincronizado por zonas para el Escenario Principal de MedaYoung Fest: animaciones dedicadas para Cenefa superior (12m×1m, 2496×208 px), Pantalla Central (8m×5m, 1664×1040 px) y Laterales (2× 3m×4m, 624×832 px c/u).",
+    "en": "Zone-synchronized multi-screen LED visual system for MedaYoung Fest Mainstage: dedicated animations for Top Cenefa (12m×1m, 2496×208 px), Central Wall (8m×5m, 1664×1040 px), and Side Wings (2× 3m×4m, 624×832 px each)."
+  },
+  "poster": "media/stages/semana-juventud/poster.jpg",
+  "preview": "media/stages/semana-juventud/zones/central_logo.mp4",
+  "w": 1280,
+  "h": 800,
+  "color": "#ffd60a",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
+    {
+      "type": "video",
+      "src": "media/stages/semana-juventud/zones/central_logo.mp4",
+      "poster": "media/stages/semana-juventud/zones/central_logo.poster.jpg",
+      "w": 1280,
+      "h": 800,
+      "caption": {
+        "es": "CENTRAL (1664×1040) — Logo MedaYoung",
+        "en": "CENTRAL (1664×1040) — MedaYoung Logo"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/semana-juventud/zones/lateral_logo.mp4",
+      "poster": "media/stages/semana-juventud/zones/lateral_logo.poster.jpg",
+      "w": 624,
+      "h": 832,
+      "caption": {
+        "es": "LATERALES (624×832) — Logo MedaYoung",
+        "en": "SIDE WINGS (624×832) — MedaYoung Logo"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/semana-juventud/zones/cenefa_base.mp4",
+      "poster": "media/stages/semana-juventud/zones/cenefa_base.poster.jpg",
+      "w": 1440,
+      "h": 120,
+      "caption": {
+        "es": "CENEFA (2496×208) — Banner Superior 12m×1m",
+        "en": "TOP CENEFA (2496×208) — 12m×1m Banner"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/semana-juventud/zones/central_4.mp4",
+      "poster": "media/stages/semana-juventud/zones/central_4.poster.jpg",
+      "w": 1280,
+      "h": 800,
+      "caption": {
+        "es": "CENTRAL (1664×1040) — Central 4",
+        "en": "CENTRAL (1664×1040) — Central 4"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/semana-juventud/zones/lateral_transicion.mp4",
+      "poster": "media/stages/semana-juventud/zones/lateral_transicion.poster.jpg",
+      "w": 624,
+      "h": 832,
+      "caption": {
+        "es": "LATERALES (624×832) — Transición Lateral",
+        "en": "SIDE WINGS (624×832) — Side Transition"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/semana-juventud/zones/central_organic27.mp4",
+      "poster": "media/stages/semana-juventud/zones/central_organic27.poster.jpg",
+      "w": 1280,
+      "h": 800,
+      "caption": {
+        "es": "CENTRAL (1664×1040) — Organic",
+        "en": "CENTRAL (1664×1040) — Organic"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/semana-juventud/zones/lateral_organic27.mp4",
+      "poster": "media/stages/semana-juventud/zones/lateral_organic27.poster.jpg",
+      "w": 624,
+      "h": 832,
+      "caption": {
+        "es": "LATERALES (624×832) — Organic",
+        "en": "SIDE WINGS (624×832) — Organic"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/semana-juventud/zones/cenefa_organic27.mp4",
+      "poster": "media/stages/semana-juventud/zones/cenefa_organic27.poster.jpg",
+      "w": 1440,
+      "h": 120,
+      "caption": {
+        "es": "CENEFA (2496×208) — Organic",
+        "en": "TOP CENEFA (2496×208) — Organic"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/semana-juventud/zones/central_ojos.mp4",
+      "poster": "media/stages/semana-juventud/zones/central_ojos.poster.jpg",
+      "w": 1280,
+      "h": 800,
+      "caption": {
+        "es": "CENTRAL (1664×1040) — Ojos",
+        "en": "CENTRAL (1664×1040) — Eyes"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/semana-juventud/zones/lateral_ojos.mp4",
+      "poster": "media/stages/semana-juventud/zones/lateral_ojos.poster.jpg",
+      "w": 624,
+      "h": 832,
+      "caption": {
+        "es": "LATERALES (624×832) — Ojos",
+        "en": "SIDE WINGS (624×832) — Eyes"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/semana-juventud/item_01.mp4",
+      "poster": "media/stages/semana-juventud/item_01.poster.jpg",
+      "w": 1280,
+      "h": 800,
+      "caption": {
+        "es": "CENTRAL — Personaje DJ MedaYoung 2D",
+        "en": "CENTRAL — MedaYoung 2D DJ Character"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/pixelmaps/semana-pxmap.jpg",
+      "poster": "media/pixelmaps/semana-pxmap.jpg",
+      "w": 1600,
+      "h": 1334,
+      "caption": {
+        "es": "Advanced Output Pixelmap — 2496×2080 px (4 Pantallas)",
+        "en": "Advanced Output Pixelmap — 2496×2080 px (4 Screens)"
+      }
+    }
+  ],
+  "pixelmap": {
+    "rig": "multi",
+    "label": "MAINSTAGE-4",
+    "canvas": [
+      2496,
+      2080
+    ],
+    "width": 12,
+    "cabinet": 104,
+    "bpm": 128,
+    "hardware": "NovaPro UHD Jr · Fiber CVT 4K · Absen PL4.8 XL",
+    "image": "media/pixelmaps/semana-pxmap.jpg",
+    "slices": [
+      {
+        "name": {
+          "es": "CENEFA SUPERIOR",
+          "en": "TOP CENEFA"
+        },
+        "x": 0,
+        "y": 0,
+        "w": 2496,
+        "h": 208,
+        "physical": "12.0m × 1.0m",
+        "pos": [
+          0,
+          7.45
+        ],
+        "size": [
+          12,
+          1
+        ],
+        "src": "cenefa"
+      },
+      {
+        "name": {
+          "es": "PANTALLA CENTRAL",
+          "en": "CENTRAL WALL"
+        },
+        "x": 0,
+        "y": 208,
+        "w": 1664,
+        "h": 1040,
+        "physical": "8.0m × 5.0m",
+        "pos": [
+          0,
+          4.1
+        ],
+        "size": [
+          8,
+          5
+        ],
+        "src": "central"
+      },
+      {
+        "name": {
+          "es": "LATERAL IZQUIERDA",
+          "en": "LEFT WING"
+        },
+        "x": 0,
+        "y": 1248,
+        "w": 624,
+        "h": 832,
+        "physical": "3.0m × 4.0m",
+        "pos": [
+          -6.2,
+          3.6
+        ],
+        "size": [
+          3,
+          4
+        ],
+        "src": "lateral"
+      },
+      {
+        "name": {
+          "es": "LATERAL DERECHA",
+          "en": "RIGHT WING"
+        },
+        "x": 624,
+        "y": 1248,
+        "w": 624,
+        "h": 832,
+        "physical": "3.0m × 4.0m",
+        "pos": [
+          6.2,
+          3.6
+        ],
+        "size": [
+          3,
+          4
+        ],
+        "src": "lateral"
+      }
+    ],
+    "scenes": [
+      {
+        "label": "MedaYoung Logo",
+        "sources": {
+          "cenefa": "media/stages/semana-juventud/zones/cenefa_base.mp4",
+          "central": "media/stages/semana-juventud/zones/central_logo.mp4",
+          "lateral": "media/stages/semana-juventud/zones/lateral_logo.mp4"
+        }
+      },
+      {
+        "label": "Central 4 + Transición",
+        "sources": {
+          "cenefa": "media/stages/semana-juventud/zones/cenefa_circulos.mp4",
+          "central": "media/stages/semana-juventud/zones/central_4.mp4",
+          "lateral": "media/stages/semana-juventud/zones/lateral_transicion.mp4"
+        }
+      },
+      {
+        "label": "Círculos",
+        "sources": {
+          "cenefa": "media/stages/semana-juventud/zones/cenefa_circulos.mp4",
+          "central": "media/stages/semana-juventud/zones/central_circulos.mp4",
+          "lateral": "media/stages/semana-juventud/zones/lateral_circulos.mp4"
+        }
+      },
+      {
+        "label": "Cracked",
+        "sources": {
+          "cenefa": "media/stages/semana-juventud/zones/cenefa_cracked.mp4",
+          "central": "media/stages/semana-juventud/zones/central_cracked.mp4",
+          "lateral": "media/stages/semana-juventud/zones/lateral_cracked.mp4"
+        }
+      },
+      {
+        "label": "Organic",
+        "sources": {
+          "cenefa": "media/stages/semana-juventud/zones/cenefa_organic27.mp4",
+          "central": "media/stages/semana-juventud/zones/central_organic27.mp4",
+          "lateral": "media/stages/semana-juventud/zones/lateral_organic27.mp4"
+        }
+      },
+      {
+        "label": "Plants",
+        "sources": {
+          "cenefa": "media/stages/semana-juventud/zones/cenefa_plants.mp4",
+          "central": "media/stages/semana-juventud/zones/central_plants.mp4",
+          "lateral": "media/stages/semana-juventud/zones/lateral_plants.mp4"
+        }
+      },
+      {
+        "label": "Ojos",
+        "sources": {
+          "cenefa": "media/stages/semana-juventud/zones/cenefa_organic28.mp4",
+          "central": "media/stages/semana-juventud/zones/central_ojos.mp4",
+          "lateral": "media/stages/semana-juventud/zones/lateral_ojos.mp4"
+        }
+      },
+      {
+        "label": "Infinito",
+        "sources": {
+          "cenefa": "media/stages/semana-juventud/zones/cenefa_base.mp4",
+          "central": "media/stages/semana-juventud/zones/central_infinito.mp4",
+          "lateral": "media/stages/semana-juventud/zones/lateral_infinito.mp4"
+        }
+      },
+      {
+        "label": "DJ MedaYoung",
+        "sources": {
+          "cenefa": "media/stages/semana-juventud/zones/cenefa_base.mp4",
+          "central": "media/stages/semana-juventud/item_01.mp4",
+          "lateral": "media/stages/semana-juventud/zones/lateral_logo.mp4"
+        }
+      }
+    ],
+    "playlist": []
+  }
+}

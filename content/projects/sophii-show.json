@@ -1,101 +1,220 @@
 {
-  "title": "Sophii Show",
-  "slug": "sophii-show",
-  "category": "visuales",
+  "id": "sophii-show",
+  "world": "stage",
   "order": 5,
-  "featured": false,
-  "year": 2025,
-  "client": "Sophii",
-  "event": "Concierto",
-  "role": [
-    "Animación",
-    "Visuales en vivo",
-    "VJ"
-  ],
+  "title": "SOPHII SHOW - CURVED PANORAMIC STAGE",
+  "year": "2025",
+  "role": {
+    "es": "Diseño Visual Panorámico 7424×1280 & TouchDesigner",
+    "en": "7424×1280 Panoramic Stage Visuals & TouchDesigner"
+  },
   "tools": [
     "TouchDesigner",
-    "Blender",
+    "Resolume Arena",
     "After Effects",
-    "Premiere Pro"
+    "7424×1280 Curved Pixelmap"
   ],
-  "summary": "Animaciones y visuales en vivo para el concierto de Sophii.",
-  "body": "Contenido animado para la pantalla del concierto, combinando piezas 3D, motion graphics y procesos en TouchDesigner, operado en vivo durante el show.",
-  "credits": "",
-  "behance": "https://www.behance.net/gallery/236727843/SOPHII-SHOW",
-  "cover": "media/sophii-show/03.mp4",
-  "media": [
+  "summary": {
+    "es": "Escenario panorámico curvo en S (7424×1280 px, relación 5.8:1) con alas laterales escalonadas, dos pórticos de acceso integrados en la pantalla LED y pasarela central. Composición maestra renderizada a resolución nativa para envolver toda la curvatura escénica.",
+    "en": "Sinuous S-curved panoramic LED stage (7424×1280 px, 5.8:1 aspect) featuring stepped outer wings, two integrated stage entrance portals cut into the LED wall, and a central thrust catwalk. Master visuals engineered at native panoramic resolution."
+  },
+  "poster": "media/stages/sophii/stage-render-1.jpg",
+  "preview": "media/stages/sophii/pano_01.mp4",
+  "w": 2560,
+  "h": 442,
+  "color": "#d946ef",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
     {
-      "type": "video",
-      "src": "media/sophii-show/01.mp4",
-      "poster": "media/sophii-show/01.jpg",
-      "w": 636,
-      "h": 360,
-      "caption": ""
+      "type": "image",
+      "src": "media/stages/sophii/stage-render-1.jpg",
+      "poster": "media/stages/sophii/stage-render-1.jpg",
+      "w": 1024,
+      "h": 768,
+      "caption": {
+        "es": "Render Escenario Curvo 7424×1280 + Pasarela Central",
+        "en": "Curved 7424×1280 Stage Render + Thrust Catwalk"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/stages/sophii/stage-render-2.jpg",
+      "poster": "media/stages/sophii/stage-render-2.jpg",
+      "w": 1024,
+      "h": 768,
+      "caption": {
+        "es": "Vista Lateral de Curvatura en S y Pórticos LED",
+        "en": "Side View of S-Curve LED Wall & Stage Portals"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/pixelmaps/sophii-pxmap.jpg",
+      "poster": "media/pixelmaps/sophii-pxmap.jpg",
+      "w": 1024,
+      "h": 176,
+      "caption": {
+        "es": "Pixelmap Original — W 7424 × H 1280 px",
+        "en": "Original Pixelmap — W 7424 × H 1280 px"
+      }
     },
     {
       "type": "video",
-      "src": "media/sophii-show/02.mp4",
-      "poster": "media/sophii-show/02.jpg",
-      "w": 720,
-      "h": 1280,
-      "caption": ""
+      "src": "media/stages/sophii/pano_01.mp4",
+      "poster": "media/stages/sophii/pano_01.poster.jpg",
+      "w": 2560,
+      "h": 442,
+      "caption": {
+        "es": "Composición Maestra 7424×1280 — Parte 01",
+        "en": "7424×1280 Master Composition — Part 01"
+      }
     },
     {
       "type": "video",
-      "src": "media/sophii-show/03.mp4",
-      "poster": "media/sophii-show/03.jpg",
+      "src": "media/stages/sophii/pano_02.mp4",
+      "poster": "media/stages/sophii/pano_02.poster.jpg",
+      "w": 2560,
+      "h": 442,
+      "caption": {
+        "es": "Composición Maestra 7424×1280 — Parte 02",
+        "en": "7424×1280 Master Composition — Part 02"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/sophii/pano_03.mp4",
+      "poster": "media/stages/sophii/pano_03.poster.jpg",
+      "w": 2560,
+      "h": 442,
+      "caption": {
+        "es": "Composición Maestra 7424×1280 — Parte 03",
+        "en": "7424×1280 Master Composition — Part 03"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/behance/sophii-show/item_03.mp4",
+      "poster": "media/behance/sophii-show/item_03.poster.jpg",
       "w": 1280,
       "h": 720,
-      "caption": ""
+      "caption": {
+        "es": "Pieza Visual HD — Sophii Show",
+        "en": "HD Visual Piece — Sophii Show"
+      }
     },
     {
       "type": "video",
-      "src": "media/sophii-show/04.mp4",
-      "poster": "media/sophii-show/04.jpg",
+      "src": "media/behance/sophii-show/item_04.mp4",
+      "poster": "media/behance/sophii-show/item_04.poster.jpg",
       "w": 1280,
       "h": 720,
-      "caption": ""
-    },
-    {
-      "type": "video",
-      "src": "media/sophii-show/05.mp4",
-      "poster": "media/sophii-show/05.jpg",
-      "w": 1280,
-      "h": 720,
-      "caption": ""
-    },
-    {
-      "type": "video",
-      "src": "media/sophii-show/06.mp4",
-      "poster": "media/sophii-show/06.jpg",
-      "w": 1280,
-      "h": 720,
-      "caption": ""
-    },
-    {
-      "type": "video",
-      "src": "media/sophii-show/07.mp4",
-      "poster": "media/sophii-show/07.jpg",
-      "w": 1280,
-      "h": 720,
-      "caption": ""
-    },
-    {
-      "type": "video",
-      "src": "media/sophii-show/08.mp4",
-      "poster": "media/sophii-show/08.jpg",
-      "w": 1280,
-      "h": 720,
-      "caption": ""
-    },
-    {
-      "type": "video",
-      "src": "media/sophii-show/09.mp4",
-      "poster": "media/sophii-show/09.jpg",
-      "w": 1280,
-      "h": 720,
-      "caption": ""
+      "caption": {
+        "es": "Visual Reactivo TouchDesigner — Sophii Show",
+        "en": "TouchDesigner Reactive Visual — Sophii Show"
+      }
     }
   ],
-  "pixelmap": null
+  "pixelmap": {
+    "rig": "curved",
+    "label": "S-CURVE-PANO",
+    "canvas": [
+      7424,
+      1280
+    ],
+    "width": 22,
+    "cabinet": 256,
+    "bpm": 124,
+    "curve": 1.25,
+    "hardware": "Curved S-Wave Ribbon · 29×5 LED Grid · 7424×1280",
+    "image": "media/pixelmaps/sophii-pxmap.jpg",
+    "slices": [
+      {
+        "name": {
+          "es": "CORONA CENTRAL",
+          "en": "CENTER CROWN"
+        },
+        "x": 1408,
+        "y": 0,
+        "w": 4608,
+        "h": 384
+      },
+      {
+        "name": {
+          "es": "BANDA PANORÁMICA",
+          "en": "PANORAMIC BAND"
+        },
+        "x": 0,
+        "y": 384,
+        "w": 7424,
+        "h": 256
+      },
+      {
+        "name": {
+          "es": "ALA IZQ",
+          "en": "LEFT WING"
+        },
+        "x": 0,
+        "y": 640,
+        "w": 2048,
+        "h": 640
+      },
+      {
+        "name": {
+          "es": "ARCO CENTRAL",
+          "en": "CENTER ARCH"
+        },
+        "x": 2432,
+        "y": 640,
+        "w": 2560,
+        "h": 640
+      },
+      {
+        "name": {
+          "es": "ALA DER",
+          "en": "RIGHT WING"
+        },
+        "x": 5376,
+        "y": 640,
+        "w": 2048,
+        "h": 640
+      }
+    ],
+    "cutouts": [
+      {
+        "x": 0,
+        "y": 0,
+        "w": 1408,
+        "h": 384,
+        "label": "STEP CUT"
+      },
+      {
+        "x": 6016,
+        "y": 0,
+        "w": 1408,
+        "h": 384,
+        "label": "STEP CUT"
+      },
+      {
+        "x": 2048,
+        "y": 640,
+        "w": 384,
+        "h": 640,
+        "label": "PORTAL L"
+      },
+      {
+        "x": 4992,
+        "y": 640,
+        "w": 384,
+        "h": 640,
+        "label": "PORTAL R"
+      }
+    ],
+    "playlist": [
+      "media/stages/sophii/pano_01.mp4",
+      "media/stages/sophii/pano_02.mp4",
+      "media/stages/sophii/pano_03.mp4",
+      "media/stages/sophii/pano_04.mp4"
+    ]
+  }
 }

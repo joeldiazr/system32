@@ -1,0 +1,82 @@
+[
+  {
+    "id": "stage",
+    "index": "01",
+    "accent": "#FF4A1C",
+    "shortName": {
+      "es": "STAGE & VJ",
+      "en": "STAGE & VJ"
+    },
+    "name": {
+      "es": "Visuales, VJ & Stage Creation",
+      "en": "Visuals, Live VJ & Stage Creation"
+    },
+    "tagline": {
+      "es": "Escenario 3D de festival con pantalla LED en vivo y luces volumétricas",
+      "en": "3D festival mainstage with live LED wall & volumetric beams"
+    },
+    "coords": "34.05°N // MAINSTAGE_RIG",
+    "preview": "media/behance/sonar-park/preview.mp4",
+    "poster": "media/behance/sonar-park/poster.jpg"
+  },
+  {
+    "id": "motion",
+    "index": "02",
+    "accent": "#B69CFF",
+    "shortName": {
+      "es": "MOTION",
+      "en": "MOTION"
+    },
+    "name": {
+      "es": "Motion Graphics & Design",
+      "en": "Motion Graphics & Design"
+    },
+    "tagline": {
+      "es": "Estudio cinético 3D con pantallas flotantes, curvas bezier y keyframes",
+      "en": "3D kinetic studio with floating monitors, bezier paths & keyframes"
+    },
+    "coords": "12.80°E // KEYFRAME_STUDIO",
+    "preview": "media/motion/darwin-reel/preview.mp4",
+    "poster": "media/motion/darwin-reel/poster.jpg"
+  },
+  {
+    "id": "vr",
+    "index": "03",
+    "accent": "#4DF5C1",
+    "shortName": {
+      "es": "VR & REAL-TIME",
+      "en": "VR & REAL-TIME"
+    },
+    "name": {
+      "es": "Realidad Virtual & TouchDesigner",
+      "en": "Virtual Reality & TouchDesigner"
+    },
+    "tagline": {
+      "es": "Laboratorio nodal 3D interactivo con partículas reactivas y hologramas",
+      "en": "Interactive 3D node-graph lab with reactive particles & holograms"
+    },
+    "coords": "88.14°Z // NODE_MATRIX_VR",
+    "preview": "media/behance/showreel-touchdesigner/preview.mp4",
+    "poster": "media/behance/showreel-touchdesigner/poster.jpg"
+  },
+  {
+    "id": "games",
+    "index": "04",
+    "accent": "#FFD23F",
+    "shortName": {
+      "es": "VIDEOJUEGOS",
+      "en": "VIDEO GAMES"
+    },
+    "name": {
+      "es": "Videojuegos & 3D Technical Art",
+      "en": "Video Games & 3D Technical Art"
+    },
+    "tagline": {
+      "es": "Viewport de motor 3D jugable: Taw Breaker (Unity) & Opossum Atelier (FBX 3D)",
+      "en": "Playable 3D engine viewport: Taw Breaker (Unity) & Opossum Atelier (3D FBX)"
+    },
+    "coords": "01.00°U // ENGINE_ARENA",
+    "preview": "",
+    "poster": "media/opossum-atelier/renders/hero-beauty.jpg"
+  }
+]

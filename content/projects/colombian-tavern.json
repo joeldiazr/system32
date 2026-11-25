@@ -1,0 +1,42 @@
+{
+  "id": "colombian-tavern",
+  "world": "vr",
+  "order": 201,
+  "title": "COLOMBIAN TAVERN",
+  "year": "2026",
+  "role": {
+    "es": "Experiencia VR Personal — Unity XR",
+    "en": "Personal VR Sandbox — Unity XR"
+  },
+  "tools": [
+    "Unity XR",
+    "Virtual Reality",
+    "Meta Quest",
+    "Spatial UI"
+  ],
+  "summary": {
+    "es": "Proyecto personal de realidad virtual hecho en Unity solo por diversión y experimentación creativa: una taberna colombiana interactiva en VR con barra, bartender, máquina expendedora y menú espacial flotante para pedir bebidas con controladores.",
+    "en": "Personal Virtual Reality project built in Unity just for fun and creative experimentation: an interactive Colombian tavern in VR with a bar counter, bartender, vending machine, and floating spatial drink menu driven by VR hand rays."
+  },
+  "poster": "media/vr/colombian-tavern/poster.jpg",
+  "preview": "media/vr/colombian-tavern/preview.mp4",
+  "w": 1280,
+  "h": 720,
+  "color": "",
+  "nodeType": "UNITY_VR",
+  "liveSet": null,
+  "gallery": [
+    {
+      "type": "video",
+      "src": "media/vr/colombian-tavern/preview.mp4",
+      "poster": "media/vr/colombian-tavern/poster.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": {
+        "es": "Colombian Tavern VR — Recorrido e Interacción en Unity XR",
+        "en": "Colombian Tavern VR — Unity XR Walkthrough & Interaction"
+      }
+    }
+  ],
+  "pixelmap": null
+}

@@ -1,31 +1,40 @@
 {
-  "title": "BetBetBet",
-  "slug": "betbetbet",
-  "category": "motion",
-  "order": 12,
-  "featured": false,
-  "year": 2026,
-  "client": "BetBetBet",
-  "event": "",
-  "role": [
-    "Motion graphics"
-  ],
+  "id": "betbetbet",
+  "world": "motion",
+  "order": 104,
+  "title": "MOTION GRAPHICS BETBETBET",
+  "year": "2025",
+  "role": {
+    "es": "Motion Graphics Designer",
+    "en": "Motion Graphics Designer"
+  },
   "tools": [
-    "After Effects"
+    "Adobe After Effects",
+    "Kinetic Type",
+    "2D/3D Motion"
   ],
-  "summary": "Motion graphics para BetBetBet.",
-  "body": "Animación de marca en formato horizontal.",
-  "credits": "",
-  "behance": "https://www.behance.net/gallery/242795257/MOTION-GRAPHICS-BETBETBET",
-  "cover": "media/betbetbet/01.mp4",
-  "media": [
+  "summary": {
+    "es": "Identidad animada de alto dinamismo con cortes rítmicos, gráfica bold y diseño de movimiento enfocado en retención inmediata.",
+    "en": "High-energy animated identity featuring rhythmic cuts, bold graphic language, and punchy motion timing."
+  },
+  "poster": "media/behance/betbetbet/poster.jpg",
+  "preview": "media/behance/betbetbet/preview.mp4",
+  "w": 960,
+  "h": 540,
+  "color": "#60a5fa",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
     {
       "type": "video",
-      "src": "media/betbetbet/01.mp4",
-      "poster": "media/betbetbet/01.jpg",
+      "src": "media/behance/betbetbet/item_01.mp4",
+      "poster": "media/behance/betbetbet/item_01.poster.jpg",
       "w": 1280,
       "h": 720,
-      "caption": ""
+      "caption": {
+        "es": "",
+        "en": ""
+      }
     }
   ],
   "pixelmap": null

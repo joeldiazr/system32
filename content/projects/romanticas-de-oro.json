@@ -1,84 +1,221 @@
 {
-  "title": "Románticas de Oro",
-  "slug": "romanticas-de-oro",
-  "category": "visuales",
-  "order": 4,
-  "featured": false,
-  "year": 2026,
-  "client": "Oropesa Tenor",
-  "event": "Show en vivo",
-  "role": [
-    "Dirección creativa",
-    "Animación 3D",
-    "Visuales de show"
-  ],
+  "id": "romanticas-de-oro",
+  "world": "stage",
+  "order": 8,
+  "title": "ROMANTICAS DE ORO SHOW",
+  "year": "2025",
+  "role": {
+    "es": "Creación Visual 3D, TouchDesigner & Stage Motion",
+    "en": "3D Visual Creation, TouchDesigner & Stage Motion"
+  },
   "tools": [
-    "Blender",
+    "Blender 3D (Cloth & Particles)",
+    "TouchDesigner",
     "After Effects",
-    "TouchDesigner"
+    "Resolume Arena"
   ],
-  "summary": "Dirección creativa y animaciones para Románticas de Oro, el proyecto de Oropesa Tenor que trae de vuelta la música romántica latina de otras épocas.",
-  "body": "Un universo dorado y nostálgico para la pantalla del show: animación 3D en Blender, piezas de motion en After Effects y procesos generativos en TouchDesigner, pensados para acompañar boleros y baladas en vivo.",
-  "credits": "",
-  "behance": "https://www.behance.net/gallery/245999019/ROMANTICAS-DE-ORO-SHOW",
-  "cover": "media/romanticas-de-oro/07.mp4",
-  "media": [
+  "summary": {
+    "es": "Identidad visual escénica y paquete completo de visuales 3D en oro para Románticas de Oro Show (Oropesa): logotipo 3D metálico animado, simulaciones de partículas doradas, geometría poliédrica, tela dinámica en Blender y texturas generativas 4K en TouchDesigner.",
+    "en": "Stage visual identity and complete 3D golden visual package for Románticas de Oro Show (Oropesa): animated 3D metallic logo, golden particle swarms, polyhedral arrays, Blender cloth simulation, and 4K generative TouchDesigner textures."
+  },
+  "poster": "media/stages/oropesa/poster.jpg",
+  "preview": "media/stages/oropesa/01_logo_animado.mp4",
+  "w": 1920,
+  "h": 1080,
+  "color": "#ffbe0b",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
     {
       "type": "video",
-      "src": "media/romanticas-de-oro/01.mp4",
-      "poster": "media/romanticas-de-oro/01.jpg",
-      "w": 720,
-      "h": 1280,
-      "caption": ""
+      "src": "media/stages/oropesa/01_logo_animado.mp4",
+      "poster": "media/stages/oropesa/01_logo_animado.poster.jpg",
+      "w": 1920,
+      "h": 1080,
+      "caption": {
+        "es": "Logo 3D Metálico Animado — Románticas de Oro",
+        "en": "Animated 3D Metallic Logo — Románticas de Oro"
+      }
     },
     {
       "type": "video",
-      "src": "media/romanticas-de-oro/02.mp4",
-      "poster": "media/romanticas-de-oro/02.jpg",
-      "w": 1280,
-      "h": 720,
-      "caption": ""
+      "src": "media/stages/oropesa/02_golden_particles.mp4",
+      "poster": "media/stages/oropesa/02_golden_particles.poster.jpg",
+      "w": 1600,
+      "h": 900,
+      "caption": {
+        "es": "Enjambre de Partículas de Oro 3D (Blender)",
+        "en": "3D Golden Particle Swarm (Blender)"
+      }
     },
     {
       "type": "video",
-      "src": "media/romanticas-de-oro/03.mp4",
-      "poster": "media/romanticas-de-oro/03.jpg",
-      "w": 1280,
-      "h": 720,
-      "caption": ""
+      "src": "media/stages/oropesa/03_golden_polyhedra.mp4",
+      "poster": "media/stages/oropesa/03_golden_polyhedra.poster.jpg",
+      "w": 1920,
+      "h": 1080,
+      "caption": {
+        "es": "Matriz Poliédrica Dorada 3D (Golden 3)",
+        "en": "3D Golden Polyhedral Matrix (Golden 3)"
+      }
     },
     {
       "type": "video",
-      "src": "media/romanticas-de-oro/04.mp4",
-      "poster": "media/romanticas-de-oro/04.jpg",
-      "w": 1280,
-      "h": 720,
-      "caption": ""
+      "src": "media/stages/oropesa/04_shine_gold.mp4",
+      "poster": "media/stages/oropesa/04_shine_gold.poster.jpg",
+      "w": 1920,
+      "h": 1080,
+      "caption": {
+        "es": "Columnas Lumínicas LED — Shine Gold",
+        "en": "LED Light Columns — Shine Gold"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/oropesa/05_golden_rain.mp4",
+      "poster": "media/stages/oropesa/05_golden_rain.poster.jpg",
+      "w": 1920,
+      "h": 1080,
+      "caption": {
+        "es": "Lluvia Dorada Bokeh — Golden Rain",
+        "en": "Bokeh Golden Rain Loop"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/oropesa/06_gold_cloth.mp4",
+      "poster": "media/stages/oropesa/06_gold_cloth.poster.jpg",
+      "w": 1920,
+      "h": 1080,
+      "caption": {
+        "es": "Simulación de Tela Dorada 3D (Blender Cloth)",
+        "en": "3D Golden Cloth Simulation (Blender)"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/oropesa/07_touchdesigner_gold.mp4",
+      "poster": "media/stages/oropesa/07_touchdesigner_gold.poster.jpg",
+      "w": 1600,
+      "h": 900,
+      "caption": {
+        "es": "Textura Generativa 4K — TouchDesigner Oropesa",
+        "en": "4K Generative Texture — TouchDesigner Oropesa"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/oropesa/08_wave_gold.mp4",
+      "poster": "media/stages/oropesa/08_wave_gold.poster.jpg",
+      "w": 1920,
+      "h": 1080,
+      "caption": {
+        "es": "Ondas de Polvo de Oro — Wave Gold",
+        "en": "Gold Dust Waves — Wave Gold"
+      }
     },
     {
       "type": "image",
-      "src": "media/romanticas-de-oro/05.jpg",
-      "poster": "media/romanticas-de-oro/05.thumb.jpg",
-      "w": 1800,
-      "h": 1012,
-      "caption": ""
+      "src": "media/behance/romanticas-de-oro/item_05.jpg",
+      "poster": "media/behance/romanticas-de-oro/item_05.jpg",
+      "w": 1600,
+      "h": 900,
+      "caption": {
+        "es": "Render Still 3D — Identidad Románticas de Oro",
+        "en": "3D Still Render — Románticas de Oro Identity"
+      }
     },
     {
       "type": "video",
-      "src": "media/romanticas-de-oro/06.mp4",
-      "poster": "media/romanticas-de-oro/06.jpg",
-      "w": 1280,
-      "h": 720,
-      "caption": ""
-    },
-    {
-      "type": "video",
-      "src": "media/romanticas-de-oro/07.mp4",
-      "poster": "media/romanticas-de-oro/07.jpg",
-      "w": 1280,
-      "h": 720,
-      "caption": ""
+      "src": "media/behance/romanticas-de-oro/item_01.mp4",
+      "poster": "media/behance/romanticas-de-oro/item_01.poster.jpg",
+      "w": 720,
+      "h": 1280,
+      "caption": {
+        "es": "Registro Promo del Show — Románticas de Oro",
+        "en": "Live Show Promo Reel — Románticas de Oro"
+      }
     }
   ],
-  "pixelmap": null
+  "pixelmap": {
+    "rig": "festival",
+    "label": "FESTIVAL-WIDE",
+    "canvas": [
+      1920,
+      1080
+    ],
+    "width": 10,
+    "cabinet": 120,
+    "bpm": 128,
+    "hardware": "Resolume Arena · 16:9 + 2× IMAG",
+    "slices": [
+      {
+        "name": {
+          "es": "PANTALLA CENTRAL",
+          "en": "CENTER WALL"
+        },
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "pos": [
+          0,
+          4.5
+        ],
+        "size": [
+          10,
+          5.625
+        ]
+      },
+      {
+        "name": {
+          "es": "IMAG IZQ",
+          "en": "IMAG LEFT"
+        },
+        "x": 640,
+        "y": 0,
+        "w": 640,
+        "h": 1080,
+        "pos": [
+          -8.2,
+          4.1
+        ],
+        "size": [
+          3,
+          5.06
+        ],
+        "ry": 0.35
+      },
+      {
+        "name": {
+          "es": "IMAG DER",
+          "en": "IMAG RIGHT"
+        },
+        "x": 640,
+        "y": 0,
+        "w": 640,
+        "h": 1080,
+        "pos": [
+          8.2,
+          4.1
+        ],
+        "size": [
+          3,
+          5.06
+        ],
+        "ry": -0.35
+      }
+    ],
+    "playlist": [
+      "media/stages/oropesa/01_logo_animado.mp4",
+      "media/stages/oropesa/02_golden_particles.mp4",
+      "media/stages/oropesa/03_golden_polyhedra.mp4",
+      "media/stages/oropesa/04_shine_gold.mp4",
+      "media/stages/oropesa/05_golden_rain.mp4",
+      "media/stages/oropesa/06_gold_cloth.mp4",
+      "media/stages/oropesa/07_touchdesigner_gold.mp4",
+      "media/stages/oropesa/08_wave_gold.mp4",
+      "media/behance/romanticas-de-oro/item_01.mp4"
+    ]
+  }
 }

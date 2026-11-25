@@ -1,31 +1,40 @@
 {
-  "title": "Juego VR — Telemedellín",
-  "slug": "vr-telemedellin",
-  "category": "vr",
-  "order": 16,
-  "featured": true,
-  "year": 2025,
-  "client": "Telemedellín",
-  "event": "",
-  "role": [
-    "Experiencia VR"
-  ],
+  "id": "vr-telemedellin",
+  "world": "vr",
+  "order": 204,
+  "title": "VR GAME FOR TELEMEDELLIN",
+  "year": "2025",
+  "role": {
+    "es": "VR Developer & Technical Artist",
+    "en": "VR Developer & Technical Artist"
+  },
   "tools": [
-    "Unreal Engine 5"
+    "Unity XR",
+    "Virtual Reality",
+    "3D Optimization"
   ],
-  "summary": "Experiencia de realidad virtual tipo juego para Telemedellín.",
-  "body": "Un juego en realidad virtual pensado para que el público explore y juegue dentro de un mundo 3D.",
-  "credits": "",
-  "behance": "",
-  "cover": "media/vr-telemedellin/01.mp4",
-  "media": [
+  "summary": {
+    "es": "Experiencia interactiva en Realidad Virtual desarrollada para Telemedellín, optimizada para framerate estable en headset, interacción espacial intuitiva y presencia inmersiva.",
+    "en": "Interactive Virtual Reality experience developed for Telemedellín, engineered for rock-solid headset framerate, intuitive spatial interaction, and immersive presence."
+  },
+  "poster": "media/behance/vr-telemedellin/poster.jpg",
+  "preview": "media/behance/vr-telemedellin/preview.mp4",
+  "w": 960,
+  "h": 540,
+  "color": "",
+  "nodeType": "VR_XR_RIG",
+  "liveSet": null,
+  "gallery": [
     {
       "type": "video",
-      "src": "media/vr-telemedellin/01.mp4",
-      "poster": "media/vr-telemedellin/01.jpg",
+      "src": "media/behance/vr-telemedellin/item_01.mp4",
+      "poster": "media/behance/vr-telemedellin/item_01.poster.jpg",
       "w": 1280,
       "h": 720,
-      "caption": ""
+      "caption": {
+        "es": "",
+        "en": ""
+      }
     }
   ],
   "pixelmap": null

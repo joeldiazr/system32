@@ -4,10 +4,13 @@
 const GLYPHS = '▓▒░█▚▞▙▟01#/\\<>_=+*';
 
 export function scramble(el, { duration = 520, text } = {}) {
-  const final = text ?? el.dataset.text ?? el.textContent;
+  // si ya había un scramble en curso, el texto real es el guardado; si no, el actual
+  const final = text ?? (el._scr ? el.dataset.text : el.textContent);
   el.dataset.text = final;
   const start = performance.now();
   cancelAnimationFrame(el._scr);
+  clearTimeout(el._scrT);
+  el._scrT = setTimeout(() => { cancelAnimationFrame(el._scr); el._scr = 0; el.textContent = final; }, duration + 80);
   const step = (now) => {
     const t = Math.min(1, (now - start) / duration);
     let out = '';
@@ -18,7 +21,7 @@ export function scramble(el, { duration = 520, text } = {}) {
     }
     el.textContent = out;
     if (t < 1) el._scr = requestAnimationFrame(step);
-    else el.textContent = final;
+    else { el.textContent = final; el._scr = 0; }
   };
   el._scr = requestAnimationFrame(step);
 }
@@ -80,6 +83,8 @@ export function splitWords(el) {
 const wipeCanvas = () => document.getElementById('wipe');
 export function wipe(swap, { color = '#FF4A1C' } = {}) {
   const cv = wipeCanvas();
+  // pestaña en segundo plano: requestAnimationFrame no corre, así que cambia sin animar
+  if (document.hidden) { cv.style.visibility = 'hidden'; return Promise.resolve(swap()); }
   const ctx = cv.getContext('2d');
   const dpr = Math.min(devicePixelRatio, 2);
   cv.width = innerWidth * dpr; cv.height = innerHeight * dpr;

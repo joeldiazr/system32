@@ -1,0 +1,63 @@
+{
+  "id": "leonisa-motion",
+  "world": "motion",
+  "order": 102,
+  "title": "LEONISA MOTION GRAPHICS",
+  "year": "2025",
+  "role": {
+    "es": "Motion Designer",
+    "en": "Motion Designer"
+  },
+  "tools": [
+    "Adobe After Effects",
+    "Illustrator",
+    "Motion Design"
+  ],
+  "summary": {
+    "es": "Piezas comerciales de motion graphics producidas para Leonisa: tipografía cinética, ritmo editorial elegante y transiciones limpias orientadas a campaña digital.",
+    "en": "Commercial motion graphics pieces produced for Leonisa: kinetic typography, refined editorial pacing, and clean transitions crafted for digital campaigns."
+  },
+  "poster": "media/behance/leonisa-motion/poster.jpg",
+  "preview": "media/behance/leonisa-motion/preview.mp4",
+  "w": 960,
+  "h": 1706,
+  "color": "#38bdf8",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
+    {
+      "type": "video",
+      "src": "media/behance/leonisa-motion/item_01.mp4",
+      "poster": "media/behance/leonisa-motion/item_01.poster.jpg",
+      "w": 1080,
+      "h": 1920,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/behance/leonisa-motion/item_02.mp4",
+      "poster": "media/behance/leonisa-motion/item_02.poster.jpg",
+      "w": 1080,
+      "h": 1920,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/behance/leonisa-motion/item_03.mp4",
+      "poster": "media/behance/leonisa-motion/item_03.poster.jpg",
+      "w": 1080,
+      "h": 1920,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    }
+  ],
+  "pixelmap": null
+}

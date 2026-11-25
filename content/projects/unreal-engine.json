@@ -1,32 +1,40 @@
 {
-  "title": "Unreal Engine",
-  "slug": "unreal-engine",
-  "category": "vr",
-  "order": 17,
-  "featured": false,
-  "year": 2025,
-  "client": "Exploración",
-  "event": "",
-  "role": [
-    "Animación 3D",
-    "Motion design"
-  ],
+  "id": "unreal-engine",
+  "world": "vr",
+  "order": 205,
+  "title": "UNREAL ENGINE REAL-TIME",
+  "year": "2025",
+  "role": {
+    "es": "Real-Time Environment & Lighting",
+    "en": "Real-Time Environment & Lighting"
+  },
   "tools": [
-    "Unreal Engine 5"
+    "Unreal Engine 5",
+    "Lumen",
+    "Real-Time Cinematics"
   ],
-  "summary": "Animación y motion design en tiempo real con Unreal Engine 5.",
-  "body": "Exploraciones de cámara, luz y materiales renderizadas en tiempo real.",
-  "credits": "",
-  "behance": "https://www.behance.net/gallery/236775025/UNREAL-ENGINE",
-  "cover": "media/unreal-engine/01.mp4",
-  "media": [
+  "summary": {
+    "es": "Exploración de iluminación en tiempo real, atmósfera volumétrica y composición cinematográfica en Unreal Engine.",
+    "en": "Real-time lighting, volumetric atmosphere, and cinematic composition study crafted in Unreal Engine."
+  },
+  "poster": "media/behance/unreal-engine/poster.jpg",
+  "preview": "media/behance/unreal-engine/preview.mp4",
+  "w": 960,
+  "h": 540,
+  "color": "",
+  "nodeType": "UE5_RENDER",
+  "liveSet": null,
+  "gallery": [
     {
       "type": "video",
-      "src": "media/unreal-engine/01.mp4",
-      "poster": "media/unreal-engine/01.jpg",
+      "src": "media/behance/unreal-engine/item_01.mp4",
+      "poster": "media/behance/unreal-engine/item_01.poster.jpg",
       "w": 1280,
       "h": 720,
-      "caption": ""
+      "caption": {
+        "es": "",
+        "en": ""
+      }
     }
   ],
   "pixelmap": null

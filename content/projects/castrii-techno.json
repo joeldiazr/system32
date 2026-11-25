@@ -1,0 +1,169 @@
+{
+  "id": "castrii-techno",
+  "world": "stage",
+  "order": 3,
+  "title": "CASTRII - ESCENARIO TECHNO (MEDAYOUNG)",
+  "year": "2026",
+  "role": {
+    "es": "Stage Pixelmap Design & Live VJ Techno",
+    "en": "Stage Pixelmap Design & Techno Live VJ"
+  },
+  "tools": [
+    "Resolume Arena Advanced Output",
+    "Blender 3D",
+    "After Effects",
+    "Cross Pixelmap 1008×784"
+  ],
+  "summary": {
+    "es": "Escenario industrial Techno con estructura LED monumental en forma de CRUZ (1008×784 px: pilar vertical 112×784 + viga horizontal 1008×112). Visuales 3D renderizados a medida para fluir exactamente dentro de los brazos de la cruz (túneles de profundidad, cadenas, murciélagos y logo animado).",
+    "en": "Industrial Techno stage built around a monumental LED CROSS pixelmap (1008×784 px: vertical tower 112×784 + horizontal span 1008×112). Bespoke 3D visuals engineered pixel-for-pixel for the cross geometry (depth tunnels, chains, bats, and animated cross typography)."
+  },
+  "poster": "media/stages/castrii/poster.jpg",
+  "preview": "media/stages/castrii/preview.mp4",
+  "w": 1008,
+  "h": 782,
+  "color": "#ff1e38",
+  "nodeType": "",
+  "liveSet": {
+    "youtubeId": "jOPun_129lc",
+    "url": "https://youtu.be/jOPun_129lc",
+    "label": {
+      "es": "VER SET EN VIVO",
+      "en": "LIVE SET IN ACTION"
+    }
+  },
+  "gallery": [
+    {
+      "type": "youtube",
+      "src": "https://youtu.be/jOPun_129lc",
+      "poster": "https://img.youtube.com/vi/jOPun_129lc/hqdefault.jpg",
+      "youtubeId": "jOPun_129lc",
+      "caption": {
+        "es": "Castrii — Set en Vivo en Festival (Visuales de Cruz en Acción · YouTube)",
+        "en": "Castrii — Live Festival Set (LED Cross Visuals in Action · YouTube)"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/castrii/item_01.mp4",
+      "poster": "media/stages/castrii/item_01.poster.jpg",
+      "w": 1008,
+      "h": 782,
+      "caption": {
+        "es": "Cruz con Profundidad 3D (1008×784)",
+        "en": "3D Depth Tunnel Cross (1008×784)"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/castrii/item_02.mp4",
+      "poster": "media/stages/castrii/item_02.poster.jpg",
+      "w": 1008,
+      "h": 782,
+      "caption": {
+        "es": "Cadenas sobre la Cruz — Loop 3D",
+        "en": "Chains Over Cross — 3D Loop"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/castrii/item_03.mp4",
+      "poster": "media/stages/castrii/item_03.poster.jpg",
+      "w": 1008,
+      "h": 782,
+      "caption": {
+        "es": "Logo Castrii Animado en Cruz",
+        "en": "Castrii Cross Animated Logo"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/castrii/item_04.mp4",
+      "poster": "media/stages/castrii/item_04.poster.jpg",
+      "w": 1008,
+      "h": 782,
+      "caption": {
+        "es": "Murciélagos Dentro de la Cruz",
+        "en": "Bats Inside the Cross"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/castrii/item_05.mp4",
+      "poster": "media/stages/castrii/item_05.poster.jpg",
+      "w": 1008,
+      "h": 782,
+      "caption": {
+        "es": "Cruz de Ojos — Visual Techno",
+        "en": "Cross of Eyes — Techno Visual"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/castrii/item_06.mp4",
+      "poster": "media/stages/castrii/item_06.poster.jpg",
+      "w": 1008,
+      "h": 782,
+      "caption": {
+        "es": "Eclipse en Movimiento",
+        "en": "Moving Eclipse Loop"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/pixelmaps/castrii-pxmap.png",
+      "poster": "media/pixelmaps/castrii-pxmap.png",
+      "w": 1008,
+      "h": 784,
+      "caption": {
+        "es": "Pixelmap Original — Cruz 1008×784 px (Castrii)",
+        "en": "Original Cross Pixelmap — 1008×784 px (Castrii)"
+      }
+    }
+  ],
+  "pixelmap": {
+    "rig": "cross",
+    "label": "TECHNO-CROSS",
+    "canvas": [
+      1008,
+      784
+    ],
+    "width": 14,
+    "cabinet": 112,
+    "bpm": 140,
+    "hardware": "Resolume Advanced Output · 1008×784 · 2 Cross Slices",
+    "image": "media/pixelmaps/castrii-pxmap.png",
+    "slices": [
+      {
+        "name": {
+          "es": "PILAR VERTICAL",
+          "en": "VERTICAL PILLAR"
+        },
+        "x": 448,
+        "y": 0,
+        "w": 112,
+        "h": 784,
+        "physical": "1.56m × 10.9m"
+      },
+      {
+        "name": {
+          "es": "VIGA HORIZONTAL",
+          "en": "HORIZONTAL BEAM"
+        },
+        "x": 0,
+        "y": 336,
+        "w": 1008,
+        "h": 112,
+        "physical": "14.0m × 1.56m"
+      }
+    ],
+    "playlist": [
+      "media/stages/castrii/item_01.mp4",
+      "media/stages/castrii/item_02.mp4",
+      "media/stages/castrii/item_03.mp4",
+      "media/stages/castrii/item_04.mp4",
+      "media/stages/castrii/item_05.mp4",
+      "media/stages/castrii/item_06.mp4"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "motion-practice",
+  "world": "motion",
+  "order": 105,
+  "title": "MOTION GRAPHICS PRACTICE",
+  "year": "2025",
+  "role": {
+    "es": "Exploración de Movimiento",
+    "en": "Motion Exploration"
+  },
+  "tools": [
+    "Adobe After Effects",
+    "Expressions",
+    "Typography"
+  ],
+  "summary": {
+    "es": "Laboratorio de curvas de velocidad, principios de animación y composición tipográfica experimental para refinar lenguaje visual.",
+    "en": "Study in speed curves, animation principles, and experimental typographic composition."
+  },
+  "poster": "media/behance/motion-practice/poster.jpg",
+  "preview": "media/behance/motion-practice/preview.mp4",
+  "w": 960,
+  "h": 1706,
+  "color": "#00b4d8",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
+    {
+      "type": "video",
+      "src": "media/behance/motion-practice/item_01.mp4",
+      "poster": "media/behance/motion-practice/item_01.poster.jpg",
+      "w": 1080,
+      "h": 1920,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    }
+  ],
+  "pixelmap": null
+}

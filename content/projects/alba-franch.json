@@ -1,0 +1,141 @@
+{
+  "id": "alba-franch",
+  "world": "stage",
+  "order": 2,
+  "title": "ALBA FRANCH - SONAR PARK 2026",
+  "year": "2026",
+  "role": {
+    "es": "Visuales de Escenario & Branding 3D Y2K",
+    "en": "Stage Visuals & Y2K 3D Identity"
+  },
+  "tools": [
+    "Blender 3D",
+    "Resolume Arena (DXV3 Alpha)",
+    "After Effects",
+    "1024×1024 Pixelmap"
+  ],
+  "summary": {
+    "es": "Paquete visual completo para el set de Alba Franch en Sónar Park sobre pantalla cuadrada 1024×1024. Incluye logotipo 3D cromado Y2K con canal Alpha para superposición en vivo sobre loops metálicos, tela dinámica y flares.",
+    "en": "Complete stage visual package for Alba Franch at Sónar Park on the 1024×1024 square monolith. Features a 3D Y2K chrome logo rendered with DXV3 Alpha for live layering over iridescent metallic, cloth, and glare loops."
+  },
+  "poster": "media/stages/alba-franch/poster.jpg",
+  "preview": "media/stages/alba-franch/preview.mp4",
+  "w": 960,
+  "h": 960,
+  "color": "#ff1e90",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
+    {
+      "type": "video",
+      "src": "media/stages/alba-franch/item_01.mp4",
+      "poster": "media/stages/alba-franch/item_01.poster.jpg",
+      "w": 1024,
+      "h": 1024,
+      "caption": {
+        "es": "Alba Franch — Logo 3D con Fondo (1024×1024)",
+        "en": "Alba Franch — 3D Logo Full Frame (1024×1024)"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/alba-franch/item_02.mp4",
+      "poster": "media/stages/alba-franch/item_02.poster.jpg",
+      "w": 1024,
+      "h": 576,
+      "caption": {
+        "es": "Iris Rosa — Loop Atmosférico",
+        "en": "Pink Iris — Atmospheric Loop"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/alba-franch/item_03.mp4",
+      "poster": "media/stages/alba-franch/item_03.poster.jpg",
+      "w": 1024,
+      "h": 1024,
+      "caption": {
+        "es": "Glare — Destello Cromático",
+        "en": "Glare — Chromatic Flare Loop"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/alba-franch/item_04.mp4",
+      "poster": "media/stages/alba-franch/item_04.poster.jpg",
+      "w": 1024,
+      "h": 576,
+      "caption": {
+        "es": "Textura Metálica Iridiscente",
+        "en": "Iridescent Metallic Texture Loop"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/alba-franch/item_05.mp4",
+      "poster": "media/stages/alba-franch/item_05.poster.jpg",
+      "w": 1024,
+      "h": 576,
+      "caption": {
+        "es": "Simulación de Tela 3D",
+        "en": "3D Cloth Simulation Loop"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/stages/alba-franch/item_06.mp4",
+      "poster": "media/stages/alba-franch/item_06.poster.jpg",
+      "w": 1024,
+      "h": 1024,
+      "caption": {
+        "es": "Alba Franch — Identidad Animada DXV3",
+        "en": "Alba Franch — Animated DXV3 Logo"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/pixelmaps/albafranch-pxmap.png",
+      "poster": "media/pixelmaps/albafranch-pxmap.png",
+      "w": 1024,
+      "h": 1024,
+      "caption": {
+        "es": "Pixelmap Original — Pantalla Ppal 1024×1024 px (Alba Franch)",
+        "en": "Original Pixelmap — Main Screen 1024×1024 px (Alba Franch)"
+      }
+    }
+  ],
+  "pixelmap": {
+    "rig": "square",
+    "label": "SONAR-SQUARE",
+    "canvas": [
+      1024,
+      1024
+    ],
+    "width": 8.1,
+    "cabinet": 128,
+    "bpm": 128,
+    "hardware": "Resolume Arena (DXV3 Alpha) · 1024×1024",
+    "image": "media/pixelmaps/albafranch-pxmap.png",
+    "slices": [
+      {
+        "name": {
+          "es": "SLICE 1 · MONOLITO 1:1",
+          "en": "SLICE 1 · 1:1 MONOLITH"
+        },
+        "x": 0,
+        "y": 0,
+        "w": 1024,
+        "h": 1024,
+        "physical": "8.1m × 8.1m"
+      }
+    ],
+    "playlist": [
+      "media/stages/alba-franch/item_01.mp4",
+      "media/stages/alba-franch/item_02.mp4",
+      "media/stages/alba-franch/item_03.mp4",
+      "media/stages/alba-franch/item_04.mp4",
+      "media/stages/alba-franch/item_05.mp4",
+      "media/stages/alba-franch/item_06.mp4"
+    ]
+  }
+}

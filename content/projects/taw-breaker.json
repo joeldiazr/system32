@@ -1,0 +1,106 @@
+{
+  "id": "taw-breaker",
+  "world": "games",
+  "order": 301,
+  "title": "TAW BREAKER",
+  "year": "2026",
+  "role": {
+    "es": "Technical Artist — Unity (VFX, Shaders & Lighting)",
+    "en": "Technical Artist — Unity (VFX, Shaders & Lighting)"
+  },
+  "tools": [
+    "Unity",
+    "HLSL / Shader Graph",
+    "C# VFX Scripting",
+    "Post-Processing HDR"
+  ],
+  "summary": {
+    "es": "Videojuego competitivo de canicas elementales en Unity. Responsable de la atmósfera e iluminación del templo, sistema de partículas y trails elementales (Fuego, Agua, Planta), portal SwapStation y manipulación dinámica en C# del shader GlassMarble con destellos HDR en colisiones.",
+    "en": "Competitive elemental marble arena game in Unity. Responsible for temple lighting & post-processing, elemental trails and impact VFX (Fire, Water, Plant), SwapStation vortex portal, and dynamic C# manipulation of the GlassMarble shader for HDR collision damage flashes."
+  },
+  "poster": "media/taw-breaker/lighting.jpg",
+  "preview": "",
+  "color": "",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
+    {
+      "type": "video",
+      "src": "media/taw-breaker/trailer.mp4",
+      "poster": "media/taw-breaker/trailer_poster.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": {
+        "es": "Taw Breaker — Tráiler Oficial Alfa (Dirección y Edición)",
+        "en": "Taw Breaker — Official Alpha Trailer (Directed & Edited)"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/taw-breaker/lighting.jpg",
+      "poster": "media/taw-breaker/lighting.jpg",
+      "w": 1600,
+      "h": 900,
+      "caption": {
+        "es": "Iluminación Nocturna & Post-Processing HDR",
+        "en": "Night Temple Lighting & HDR Post-Processing"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/taw-breaker/particles.jpg",
+      "poster": "media/taw-breaker/particles.jpg",
+      "w": 1600,
+      "h": 900,
+      "caption": {
+        "es": "Partículas de Impacto Elemental",
+        "en": "Elemental Collision Particle System"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/taw-breaker/shaders.jpg",
+      "poster": "media/taw-breaker/shaders.jpg",
+      "w": 1600,
+      "h": 900,
+      "caption": {
+        "es": "Shader GlassMarble — Damage Flash HDR",
+        "en": "GlassMarble Shader — Dynamic HDR Flash"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/taw-breaker/portal.jpg",
+      "poster": "media/taw-breaker/portal.jpg",
+      "w": 1600,
+      "h": 900,
+      "caption": {
+        "es": "Swap Station — Vórtice Portal Radial",
+        "en": "Swap Station — Radial Vortex Portal"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/taw-breaker/entorno.jpg",
+      "poster": "media/taw-breaker/entorno.jpg",
+      "w": 1600,
+      "h": 900,
+      "caption": {
+        "es": "Integración del Templo & Skybox",
+        "en": "Temple Arena & Skybox Integration"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/taw-breaker/vfx.jpg",
+      "poster": "media/taw-breaker/vfx.jpg",
+      "w": 1600,
+      "h": 900,
+      "caption": {
+        "es": "Trails Elementales & VFXCollisionManager",
+        "en": "Elemental Trails & VFXCollisionManager"
+      }
+    }
+  ],
+  "pixelmap": null
+}

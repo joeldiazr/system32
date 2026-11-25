@@ -1,0 +1,140 @@
+{
+  "id": "sonar-park",
+  "world": "stage",
+  "order": 1,
+  "title": "SONAR PARK 2026 - PETERBLUE",
+  "year": "2026",
+  "role": {
+    "es": "Dirección Visual & Operación Resolume DXV3",
+    "en": "Visual Direction & Resolume DXV3 Operation"
+  },
+  "tools": [
+    "Resolume Arena 7 (DXV3)",
+    "After Effects",
+    "1024×1024 Pixelmap",
+    "180 BPM Sync"
+  ],
+  "summary": {
+    "es": "Escenario 1:1 monolítico (1024×1024) para el show de Peter Blue en Sónar Park 2026. Arquitectura de 4 capas en Resolume Arena (Autopilot base, textos rítmicos, logos y Stroboscope Difference Ready-to-Map) con protocolo técnico profesional.",
+    "en": "Monolithic 1:1 square LED wall (1024×1024) for Peter Blue at Sónar Park 2026. Engineered as a 4-layer Resolume Arena show (Autopilot base, kinetic phrases, brand overlays & Ready-to-Map Difference Stroboscope) with full technical rider."
+  },
+  "poster": "media/behance/sonar-park/poster.jpg",
+  "preview": "media/stages/peterblue/square-preview.mp4",
+  "w": 960,
+  "h": 960,
+  "color": "#006eff",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
+    {
+      "type": "video",
+      "src": "media/behance/sonar-park/item_01.mp4",
+      "poster": "media/behance/sonar-park/item_01.poster.jpg",
+      "w": 720,
+      "h": 1280,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/behance/sonar-park/item_02.mp4",
+      "poster": "media/behance/sonar-park/item_02.poster.jpg",
+      "w": 720,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/behance/sonar-park/item_03.mp4",
+      "poster": "media/behance/sonar-park/item_03.poster.jpg",
+      "w": 720,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/behance/sonar-park/item_04.mp4",
+      "poster": "media/behance/sonar-park/item_04.poster.jpg",
+      "w": 720,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/behance/sonar-park/item_05.mp4",
+      "poster": "media/behance/sonar-park/item_05.poster.jpg",
+      "w": 720,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/behance/sonar-park/item_06.mp4",
+      "poster": "media/behance/sonar-park/item_06.poster.jpg",
+      "w": 720,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    }
+  ],
+  "pixelmap": {
+    "rig": "square",
+    "label": "SONAR-SQUARE",
+    "canvas": [
+      1024,
+      1024
+    ],
+    "width": 8.1,
+    "cabinet": 128,
+    "bpm": 180.32,
+    "hardware": "Resolume Arena 7 (DXV3) · 1024×1024 · 4 Layers",
+    "image": "media/pixelmaps/peterblue-pxmap.jpg",
+    "slices": [
+      {
+        "name": {
+          "es": "SLICE 1 · MONOLITO 1:1",
+          "en": "SLICE 1 · 1:1 MONOLITH"
+        },
+        "x": 0,
+        "y": 0,
+        "w": 1024,
+        "h": 1024,
+        "physical": "8.1m × 8.1m"
+      }
+    ],
+    "playlist": [
+      "media/stages/peterblue/square-preview.mp4",
+      "media/stages/peterblue/lamakinalatina.mp4",
+      "media/stages/peterblue/extra/screen-ananay.mp4",
+      "media/stages/peterblue/extra/screen-panteras.mp4",
+      "media/stages/peterblue/extra/screen-raro.mp4",
+      "media/stages/peterblue/extra/screen-stack.mp4",
+      "media/stages/peterblue/extra/sq-04.mp4",
+      "media/stages/peterblue/extra/sq-06.mp4",
+      "media/stages/peterblue/extra/sq-08.mp4",
+      "media/stages/peterblue/extra/sq-11.mp4",
+      "media/stages/peterblue/extra/sq-14.mp4",
+      "media/stages/peterblue/extra/sq-15.mp4",
+      "media/stages/peterblue/extra/sq-16.mp4",
+      "media/stages/peterblue/extra/sq-17.mp4",
+      "media/stages/peterblue/extra/sq-18.mp4",
+      "media/stages/peterblue/extra/sq-21.mp4"
+    ]
+  }
+}

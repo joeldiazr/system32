@@ -1,0 +1,299 @@
+{
+  "tawDevlogs": [
+    {
+      "id": "devlog-1",
+      "num": "01",
+      "image": "media/taw-breaker/lighting.jpg",
+      "extraImage": "media/taw-breaker/entorno.jpg",
+      "title": {
+        "es": "Iluminación del Templo y Post-Processing HDR",
+        "en": "Temple Lighting & HDR Post-Processing"
+      },
+      "body": {
+        "es": "Consolidación de la atmósfera nocturna del Templo mediante antorchas 3D con luces puntuales dinámicas, fuego estilizado, una tenue luz direccional Moonlight, luz ambiental Trilight para conservar volumen en sombras y calibración de Bloom HDR sobre el Skybox nocturno.",
+        "en": "Consolidated the nocturnal Temple atmosphere with 3D torches, dynamic point lights, stylized fire particles, subtle Moonlight directional light, Trilight ambient fill to preserve shadow volume, and calibrated HDR Bloom against the night Skybox."
+      },
+      "bullets": {
+        "es": [
+          "Integración de antorchas 3D escaladas a la arquitectura del nivel.",
+          "Luces puntuales dinámicas + Moonlight direccional + Trilight ambiente.",
+          "Perfil de Post-Processing Bloom calibrado para materiales HDR emisivos."
+        ],
+        "en": [
+          "3D torch models integrated and scaled to temple level architecture.",
+          "Dynamic point lights + directional Moonlight + Trilight ambient balance.",
+          "HDR Bloom Post-Processing profile tuned for emissive game elements."
+        ]
+      }
+    },
+    {
+      "id": "devlog-2",
+      "num": "02",
+      "image": "media/taw-breaker/particles.jpg",
+      "extraImage": "media/taw-breaker/portal.jpg",
+      "title": {
+        "es": "Partículas Elementales, Trails y Portal SwapStation",
+        "en": "Elemental Particles, Trails & SwapStation Portal"
+      },
+      "body": {
+        "es": "Estandarización de auras y trails elementales (Fuego, Agua y Planta) en las 6 canicas de ambos jugadores, prefabs de impacto HDR dedicados, lógica en VFXCollisionManager.cs filtrando fricción con el suelo y vórtice radial Rojo→Azul en la SwapStation.",
+        "en": "Standardized elemental trails and auras (Fire, Water, Plant) across all 6 player marbles, dedicated HDR hit prefabs, ground-friction filtering in VFXCollisionManager.cs, and a rotating Red→Blue radial vortex for the SwapStation portal."
+      },
+      "bullets": {
+        "es": [
+          "Trails y ParticleSystems estandarizados para Fuego, Agua y Planta.",
+          "Prefabs de impacto con paletas HDR de alta intensidad por elemento.",
+          "VFXCollisionManager.cs disparando VFX estrictamente en impactos tácticos."
+        ],
+        "en": [
+          "Standardized TrailRenderers & ParticleSystems for Fire, Water, and Plant.",
+          "High-intensity elemental HDR collision impact prefabs.",
+          "VFXCollisionManager.cs filtering floor friction to fire only on tactical hits."
+        ]
+      }
+    },
+    {
+      "id": "devlog-3",
+      "num": "03",
+      "image": "media/taw-breaker/shaders.jpg",
+      "extraImage": "media/taw-breaker/vfx.jpg",
+      "title": {
+        "es": "Manipulación Dinámica de Shaders en Colisiones (GlassMarble)",
+        "en": "Dynamic Runtime Shader Manipulation (GlassMarble)"
+      },
+      "body": {
+        "es": "Sistema de Damage Flash en tiempo de ejecución accediendo directamente por código a las propiedades del shader GlassMarble (_Tint, _RimColor, _SkyTop) para inyectar destellos HDR absolutos e idénticos al impactar y restaurar el material sin afectar el rendimiento.",
+        "en": "Runtime Damage Flash system programmatically overriding GlassMarble shader properties (_Tint, _RimColor, _SkyTop) with absolute HDR bursts on impact, then cleanly restoring original material states with zero frame drops."
+      },
+      "bullets": {
+        "es": [
+          "Sobreescritura en tiempo real de _Tint, _RimColor y _SkyTop vía C#.",
+          "Valores HDR absolutos para feedback idéntico independientemente del material base.",
+          "Corrutina de restauración suave del material tras cada colisión."
+        ],
+        "en": [
+          "Runtime C# override of _Tint, _RimColor, and _SkyTop shader channels.",
+          "Absolute HDR flash intensity guaranteeing consistent readability across marbles.",
+          "Lightweight restoration routine returning materials to base values smoothly."
+        ]
+      }
+    }
+  ],
+  "opossumProps": [
+    {
+      "slug": "01-silla-rimax",
+      "code": "Prop_sillarimax",
+      "name": {
+        "es": "Silla Plástica Rimax",
+        "en": "Colombian Rimax Chair"
+      },
+      "category": {
+        "es": "Mobiliario Cultural / Entorno",
+        "en": "Cultural Furniture / Environment"
+      },
+      "quads": "2,248",
+      "gpuTris": "4,496",
+      "maps": "BaseColor · MetallicSmoothness · Roughness",
+      "beauty": "media/opossum-atelier/renders/01-silla-rimax-beauty.jpg",
+      "wireframe": "media/opossum-atelier/renders/01-silla-rimax-wireframe.jpg",
+      "fbx": "media/opossum-atelier/models/01-silla-rimax.fbx",
+      "baseColor": "media/opossum-atelier/models/01-silla-rimax-basecolor.jpg",
+      "roughness": "media/opossum-atelier/models/01-silla-rimax-roughness.jpg",
+      "metallic": null
+    },
+    {
+      "slug": "02-palo-mangos",
+      "code": "Prop_palodemangos",
+      "name": {
+        "es": "Palo de Mangos Tropical",
+        "en": "Tropical Mango Tree"
+      },
+      "category": {
+        "es": "Vegetación Hero / Árbol Frutal",
+        "en": "Hero Vegetation / Fruit Tree"
+      },
+      "quads": "2,224",
+      "gpuTris": "4,448",
+      "maps": "BaseColor · MetallicSmoothness · Roughness",
+      "beauty": "media/opossum-atelier/renders/02-palo-mangos-beauty.jpg",
+      "wireframe": "media/opossum-atelier/renders/02-palo-mangos-wireframe.jpg",
+      "fbx": "media/opossum-atelier/models/02-palo-mangos.fbx",
+      "baseColor": "media/opossum-atelier/models/02-palo-mangos-basecolor.jpg",
+      "roughness": "media/opossum-atelier/models/02-palo-mangos-roughness.jpg",
+      "metallic": null
+    },
+    {
+      "slug": "03-aspiradora",
+      "code": "Prop_aspiradora",
+      "name": {
+        "es": "Aspiradora Cozy + Boquilla",
+        "en": "Cozy Canister Vacuum"
+      },
+      "category": {
+        "es": "Herramienta de Gameplay",
+        "en": "Interactive Gameplay Tool"
+      },
+      "quads": "5,216",
+      "gpuTris": "10,432",
+      "maps": "BaseColor · MetallicSmoothness · Roughness · Metallic",
+      "beauty": "media/opossum-atelier/renders/03-aspiradora-beauty.jpg",
+      "wireframe": "media/opossum-atelier/renders/03-aspiradora-wireframe.jpg",
+      "fbx": "media/opossum-atelier/models/03-aspiradora.fbx",
+      "baseColor": "media/opossum-atelier/models/03-aspiradora-basecolor.jpg",
+      "roughness": "media/opossum-atelier/models/03-aspiradora-roughness.jpg",
+      "metallic": "media/opossum-atelier/models/03-aspiradora-metallic.jpg"
+    },
+    {
+      "slug": "04-pincel",
+      "code": "Prop_pincel",
+      "name": {
+        "es": "Pincel de Cerdas Naturales",
+        "en": "Wooden Sable Paintbrush"
+      },
+      "category": {
+        "es": "Herramienta de Gameplay",
+        "en": "Interactive Gameplay Tool"
+      },
+      "quads": "728",
+      "gpuTris": "1,456",
+      "maps": "BaseColor · MetallicSmoothness · Roughness · Metallic",
+      "beauty": "media/opossum-atelier/renders/04-pincel-beauty.jpg",
+      "wireframe": "media/opossum-atelier/renders/04-pincel-wireframe.jpg",
+      "fbx": "media/opossum-atelier/models/04-pincel.fbx",
+      "baseColor": "media/opossum-atelier/models/04-pincel-basecolor.jpg",
+      "roughness": "media/opossum-atelier/models/04-pincel-roughness.jpg",
+      "metallic": "media/opossum-atelier/models/04-pincel-metallic.jpg"
+    },
+    {
+      "slug": "05-mancha-pintura",
+      "code": "Prop_manchapintura",
+      "name": {
+        "es": "Mancha de Pintura 3D",
+        "en": "Volumetric 3D Paint Splat"
+      },
+      "category": {
+        "es": "Superficie Interactiva",
+        "en": "Interactive Gameplay Surface"
+      },
+      "quads": "3,380",
+      "gpuTris": "6,760",
+      "maps": "BaseColor · MetallicSmoothness · Roughness · Metallic",
+      "beauty": "media/opossum-atelier/renders/05-mancha-pintura-beauty.jpg",
+      "wireframe": "media/opossum-atelier/renders/05-mancha-pintura-wireframe.jpg",
+      "fbx": "media/opossum-atelier/models/05-mancha-pintura.fbx",
+      "baseColor": "media/opossum-atelier/models/05-mancha-pintura-basecolor.jpg",
+      "roughness": "media/opossum-atelier/models/05-mancha-pintura-roughness.jpg",
+      "metallic": "media/opossum-atelier/models/05-mancha-pintura-metallic.jpg"
+    },
+    {
+      "slug": "06-arbusto",
+      "code": "Prop_arbustomedialtura",
+      "name": {
+        "es": "Arbusto Tropical",
+        "en": "Tropical Mid-Height Bush"
+      },
+      "category": {
+        "es": "Follaje Modular",
+        "en": "Modular Foliage"
+      },
+      "quads": "2,070",
+      "gpuTris": "4,140",
+      "maps": "BaseColor",
+      "beauty": "media/opossum-atelier/renders/06-arbusto-beauty.jpg",
+      "wireframe": "media/opossum-atelier/renders/06-arbusto-wireframe.jpg",
+      "fbx": "media/opossum-atelier/models/06-arbusto.fbx",
+      "baseColor": "media/opossum-atelier/models/06-arbusto-basecolor.jpg",
+      "roughness": null,
+      "metallic": null
+    },
+    {
+      "slug": "07-valla",
+      "code": "Prop_valla",
+      "name": {
+        "es": "Valla Metálica Modular",
+        "en": "Modular Metal Fence"
+      },
+      "category": {
+        "es": "Arquitectura Modular",
+        "en": "Modular Architecture"
+      },
+      "quads": "2,472",
+      "gpuTris": "4,944",
+      "maps": "BaseColor · MetallicSmoothness · Roughness · Metallic",
+      "beauty": "media/opossum-atelier/renders/07-valla-beauty.jpg",
+      "wireframe": "media/opossum-atelier/renders/07-valla-wireframe.jpg",
+      "fbx": "media/opossum-atelier/models/07-valla.fbx",
+      "baseColor": "media/opossum-atelier/models/07-valla-basecolor.jpg",
+      "roughness": "media/opossum-atelier/models/07-valla-roughness.jpg",
+      "metallic": "media/opossum-atelier/models/07-valla-metallic.jpg"
+    },
+    {
+      "slug": "08-cesped",
+      "code": "Prop_Cesped",
+      "name": {
+        "es": "Césped Estilizado con Flores",
+        "en": "Stylized 3D Clumped Grass"
+      },
+      "category": {
+        "es": "Follaje de Suelo 3D",
+        "en": "3D Ground Foliage"
+      },
+      "quads": "2,268",
+      "gpuTris": "4,536",
+      "maps": "BaseColor · MetallicSmoothness · Roughness",
+      "beauty": "media/opossum-atelier/renders/08-cesped-beauty.jpg",
+      "wireframe": "media/opossum-atelier/renders/08-cesped-wireframe.jpg",
+      "fbx": "media/opossum-atelier/models/08-cesped.fbx",
+      "baseColor": "media/opossum-atelier/models/08-cesped-basecolor.jpg",
+      "roughness": "media/opossum-atelier/models/08-cesped-roughness.jpg",
+      "metallic": null
+    }
+  ],
+  "opossumClips": [
+    {
+      "id": "patio-props",
+      "num": "01",
+      "duration": "1:00",
+      "src": "media/opossum-atelier/videos/clip_01_patio_props.mp4",
+      "poster": "media/opossum-atelier/videos/clip_01_patio_props_poster.jpg",
+      "title": {
+        "es": "Patio & Props 3D en Unity",
+        "en": "Outdoor Patio & 3D Props in Unity"
+      },
+      "propsFeatured": {
+        "es": "Palo de Mangos · Silla Rimax · Valla · Arbustos · Césped",
+        "en": "Mango Tree · Rimax Chair · Fence · Bushes · Grass"
+      }
+    },
+    {
+      "id": "workshop",
+      "num": "02",
+      "duration": "0:40",
+      "src": "media/opossum-atelier/videos/clip_02_workshop.mp4",
+      "poster": "media/opossum-atelier/videos/clip_02_workshop_poster.jpg",
+      "title": {
+        "es": "Taller Cozy & Exploración",
+        "en": "Cozy Atelier & Exploration"
+      },
+      "propsFeatured": {
+        "es": "Interior del taller · Iluminación estilizada · Mesa de trabajo",
+        "en": "Atelier interior · Stylized lighting · Workbench"
+      }
+    },
+    {
+      "id": "crafting",
+      "num": "03",
+      "duration": "0:59",
+      "src": "media/opossum-atelier/videos/clip_03_crafting.mp4",
+      "poster": "media/opossum-atelier/videos/clip_03_crafting_poster.jpg",
+      "title": {
+        "es": "Construcción & Pintura",
+        "en": "Crafting & Painting Mode"
+      },
+      "propsFeatured": {
+        "es": "Ensamblaje en vivo · Pincel y pintura · Turnaround final",
+        "en": "Live assembly · Brush & paint tools · Final turnaround"
+      }
+    }
+  ]
+}

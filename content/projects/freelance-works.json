@@ -1,65 +1,95 @@
 {
-  "title": "Trabajos freelance",
-  "slug": "freelance-works",
-  "category": "motion",
-  "order": 15,
-  "featured": false,
-  "year": 2024,
-  "client": "Varios",
-  "event": "",
-  "role": [
-    "Motion graphics",
-    "Edición"
-  ],
+  "id": "freelance-works",
+  "world": "motion",
+  "order": 106,
+  "title": "FREELANCE WORKS",
+  "year": "2024-2025",
+  "role": {
+    "es": "Freelance Motion & 3D Artist",
+    "en": "Freelance Motion & 3D Artist"
+  },
   "tools": [
     "After Effects",
+    "Blender",
     "Premiere Pro"
   ],
-  "summary": "Una selección de piezas freelance para marcas y artistas.",
-  "body": "Formatos verticales y horizontales para redes y pantallas.",
-  "credits": "",
-  "behance": "",
-  "cover": "media/freelance-works/05.mp4",
-  "media": [
+  "summary": {
+    "es": "Selección de 6 piezas comerciales y encargos independientes que combinan animación 2D/3D, branding animado y postproducción audiovisual.",
+    "en": "Curated selection of 6 commercial commissions blending 2D/3D animation, animated branding, and visual post-production."
+  },
+  "poster": "media/behance/freelance-works/poster.jpg",
+  "preview": "media/behance/freelance-works/preview.mp4",
+  "w": 960,
+  "h": 1706,
+  "color": "#2563eb",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
     {
       "type": "video",
-      "src": "media/freelance-works/01.mp4",
-      "poster": "media/freelance-works/01.jpg",
-      "w": 720,
-      "h": 1280,
-      "caption": ""
+      "src": "media/behance/freelance-works/item_01.mp4",
+      "poster": "media/behance/freelance-works/item_01.poster.jpg",
+      "w": 1080,
+      "h": 1920,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
     },
     {
       "type": "video",
-      "src": "media/freelance-works/02.mp4",
-      "poster": "media/freelance-works/02.jpg",
-      "w": 720,
-      "h": 1280,
-      "caption": ""
+      "src": "media/behance/freelance-works/item_02.mp4",
+      "poster": "media/behance/freelance-works/item_02.poster.jpg",
+      "w": 1080,
+      "h": 1920,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
     },
     {
       "type": "video",
-      "src": "media/freelance-works/03.mp4",
-      "poster": "media/freelance-works/03.jpg",
-      "w": 720,
-      "h": 1280,
-      "caption": ""
+      "src": "media/behance/freelance-works/item_03.mp4",
+      "poster": "media/behance/freelance-works/item_03.poster.jpg",
+      "w": 1080,
+      "h": 1920,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
     },
     {
       "type": "video",
-      "src": "media/freelance-works/04.mp4",
-      "poster": "media/freelance-works/04.jpg",
-      "w": 720,
-      "h": 1280,
-      "caption": ""
+      "src": "media/behance/freelance-works/item_04.mp4",
+      "poster": "media/behance/freelance-works/item_04.poster.jpg",
+      "w": 1080,
+      "h": 1920,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
     },
     {
       "type": "video",
-      "src": "media/freelance-works/05.mp4",
-      "poster": "media/freelance-works/05.jpg",
+      "src": "media/behance/freelance-works/item_05.mp4",
+      "poster": "media/behance/freelance-works/item_05.poster.jpg",
       "w": 1280,
       "h": 720,
-      "caption": ""
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/behance/freelance-works/item_06.mp4",
+      "poster": "media/behance/freelance-works/item_06.poster.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
     }
   ],
   "pixelmap": null

@@ -1,0 +1,42 @@
+{
+  "id": "darwin-reel",
+  "world": "motion",
+  "order": 101,
+  "title": "BAILE.EXE - DARWIN (SOSO × SOLID STATE)",
+  "year": "2026",
+  "role": {
+    "es": "Dirección de Motion Graphics & Tipografía Cinética",
+    "en": "Motion Graphics Direction & Kinetic Typography"
+  },
+  "tools": [
+    "Adobe After Effects",
+    "Kinetic Typography",
+    "Liquid Displacement",
+    "Sound Sync"
+  ],
+  "summary": {
+    "es": "Reel promocional de estética cyber-editorial para SOSO × Solid State Sobeteo presentando a Darwin (BAILE.EXE): tipografía modular líquida, micro-gráfica ASCII, máscaras dinámicas en negativo y montaje rítmico en formato nativo 9:16.",
+    "en": "Cyber-editorial promotional motion reel for SOSO × Solid State Sobeteo featuring Darwin (BAILE.EXE): liquid-masked modular display typography, ASCII micro-graphics, negative portrait framing, and beat-synced editing in native 9:16."
+  },
+  "poster": "media/motion/darwin-reel/poster.jpg",
+  "preview": "media/motion/darwin-reel/preview.mp4",
+  "w": 1080,
+  "h": 1920,
+  "color": "#00e5ff",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
+    {
+      "type": "video",
+      "src": "media/motion/darwin-reel/preview.mp4",
+      "poster": "media/motion/darwin-reel/preview.poster.jpg",
+      "w": 1080,
+      "h": 1920,
+      "caption": {
+        "es": "Reel Completo — BAILE.EXE: Darwin (1080×1920 · Con Audio)",
+        "en": "Full Motion Reel — BAILE.EXE: Darwin (1080×1920 · With Sound)"
+      }
+    }
+  ],
+  "pixelmap": null
+}

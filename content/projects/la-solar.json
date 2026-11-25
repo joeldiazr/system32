@@ -1,0 +1,180 @@
+{
+  "id": "la-solar",
+  "world": "stage",
+  "order": 6,
+  "title": "FUMARATTO & FRIENDS - LA SOLAR 2024",
+  "year": "2024",
+  "role": {
+    "es": "Live VJ & Contenido Escénico",
+    "en": "Live VJ & Stage Content"
+  },
+  "tools": [
+    "Resolume Arena",
+    "After Effects",
+    "3D Visuals"
+  ],
+  "summary": {
+    "es": "Producción visual y operación en vivo para Fumaratto & Friends en Festival La Solar 2024 en Medellín, integrando visuales sincronizados a gran escala y fotografía escénica del show.",
+    "en": "Visual production and live operation for Fumaratto & Friends at La Solar Festival 2024 in Medellín, combining synchronized large-format LED visuals and live stage direction."
+  },
+  "poster": "media/behance/la-solar/poster.jpg",
+  "preview": "media/behance/la-solar/preview.mp4",
+  "w": 360,
+  "h": 636,
+  "color": "#ff5500",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
+    {
+      "type": "video",
+      "src": "media/behance/la-solar/item_01.mp4",
+      "poster": "media/behance/la-solar/item_01.poster.jpg",
+      "w": 360,
+      "h": 636,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/behance/la-solar/item_02.jpg",
+      "poster": "media/behance/la-solar/item_02.jpg",
+      "w": 1600,
+      "h": 1066,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/behance/la-solar/item_03.jpg",
+      "poster": "media/behance/la-solar/item_03.jpg",
+      "w": 1600,
+      "h": 1092,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/behance/la-solar/item_04.jpg",
+      "poster": "media/behance/la-solar/item_04.jpg",
+      "w": 1600,
+      "h": 1066,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/behance/la-solar/item_05.jpg",
+      "poster": "media/behance/la-solar/item_05.jpg",
+      "w": 1080,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/behance/la-solar/item_06.jpg",
+      "poster": "media/behance/la-solar/item_06.jpg",
+      "w": 1080,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/behance/la-solar/item_07.jpg",
+      "poster": "media/behance/la-solar/item_07.jpg",
+      "w": 1080,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    }
+  ],
+  "pixelmap": {
+    "rig": "festival",
+    "label": "FESTIVAL-WIDE",
+    "canvas": [
+      1920,
+      1080
+    ],
+    "width": 10,
+    "cabinet": 120,
+    "bpm": 128,
+    "hardware": "Resolume Arena · 16:9 + 2× IMAG",
+    "slices": [
+      {
+        "name": {
+          "es": "PANTALLA CENTRAL",
+          "en": "CENTER WALL"
+        },
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "pos": [
+          0,
+          4.5
+        ],
+        "size": [
+          10,
+          5.625
+        ]
+      },
+      {
+        "name": {
+          "es": "IMAG IZQ",
+          "en": "IMAG LEFT"
+        },
+        "x": 640,
+        "y": 0,
+        "w": 640,
+        "h": 1080,
+        "pos": [
+          -8.2,
+          4.1
+        ],
+        "size": [
+          3,
+          5.06
+        ],
+        "ry": 0.35
+      },
+      {
+        "name": {
+          "es": "IMAG DER",
+          "en": "IMAG RIGHT"
+        },
+        "x": 640,
+        "y": 0,
+        "w": 640,
+        "h": 1080,
+        "pos": [
+          8.2,
+          4.1
+        ],
+        "size": [
+          3,
+          5.06
+        ],
+        "ry": -0.35
+      }
+    ],
+    "playlist": [
+      "media/behance/la-solar/preview.mp4",
+      "media/behance/la-solar/item_01.mp4"
+    ]
+  }
+}

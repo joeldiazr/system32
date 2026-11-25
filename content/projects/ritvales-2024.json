@@ -1,264 +1,191 @@
 {
-  "title": "Ritvales",
-  "slug": "ritvales-2024",
-  "category": "visuales",
+  "id": "ritvales-2024",
+  "world": "stage",
   "order": 7,
-  "featured": false,
-  "year": 2024,
-  "client": "Ritvales",
-  "event": "Ritvales 2024",
-  "role": [
-    "Visuales en vivo"
-  ],
+  "title": "RITVALES 2024",
+  "year": "2024",
+  "role": {
+    "es": "Visuales de Festival & Stage Design",
+    "en": "Festival Visuals & Stage Design"
+  },
   "tools": [
-    "Resolume Arena"
+    "Resolume Arena",
+    "After Effects",
+    "Stage Lighting"
   ],
-  "summary": "Registro fotográfico de los visuales en vivo para Ritvales 2024.",
-  "body": "Pantallas, luz y público: una selección de fotos del show.",
-  "credits": "",
-  "behance": "",
-  "cover": "media/ritvales-2024/01.jpg",
-  "media": [
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/01.jpg",
-      "poster": "media/ritvales-2024/01.thumb.jpg",
-      "w": 1800,
-      "h": 1106,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/02.jpg",
-      "poster": "media/ritvales-2024/02.thumb.jpg",
-      "w": 1800,
-      "h": 1150,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/03.jpg",
-      "poster": "media/ritvales-2024/03.thumb.jpg",
-      "w": 1800,
-      "h": 1186,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/04.jpg",
-      "poster": "media/ritvales-2024/04.thumb.jpg",
-      "w": 1800,
-      "h": 1200,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/05.jpg",
-      "poster": "media/ritvales-2024/05.thumb.jpg",
-      "w": 1200,
-      "h": 1800,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/06.jpg",
-      "poster": "media/ritvales-2024/06.thumb.jpg",
-      "w": 1800,
-      "h": 1200,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/07.jpg",
-      "poster": "media/ritvales-2024/07.thumb.jpg",
-      "w": 1800,
-      "h": 1170,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/08.jpg",
-      "poster": "media/ritvales-2024/08.thumb.jpg",
-      "w": 1800,
-      "h": 1200,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/09.jpg",
-      "poster": "media/ritvales-2024/09.thumb.jpg",
-      "w": 1800,
-      "h": 1200,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/10.jpg",
-      "poster": "media/ritvales-2024/10.thumb.jpg",
-      "w": 1800,
-      "h": 1166,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/11.jpg",
-      "poster": "media/ritvales-2024/11.thumb.jpg",
-      "w": 1244,
-      "h": 1800,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/12.jpg",
-      "poster": "media/ritvales-2024/12.thumb.jpg",
-      "w": 1800,
-      "h": 1172,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/13.jpg",
-      "poster": "media/ritvales-2024/13.thumb.jpg",
-      "w": 1800,
-      "h": 1200,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/14.jpg",
-      "poster": "media/ritvales-2024/14.thumb.jpg",
-      "w": 1310,
-      "h": 1800,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/15.jpg",
-      "poster": "media/ritvales-2024/15.thumb.jpg",
-      "w": 1294,
-      "h": 1800,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/16.jpg",
-      "poster": "media/ritvales-2024/16.thumb.jpg",
-      "w": 1800,
-      "h": 1234,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/17.jpg",
-      "poster": "media/ritvales-2024/17.thumb.jpg",
-      "w": 1800,
-      "h": 1200,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/18.jpg",
-      "poster": "media/ritvales-2024/18.thumb.jpg",
-      "w": 1800,
-      "h": 1200,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/19.jpg",
-      "poster": "media/ritvales-2024/19.thumb.jpg",
-      "w": 1800,
-      "h": 1138,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/20.jpg",
-      "poster": "media/ritvales-2024/20.thumb.jpg",
-      "w": 1800,
-      "h": 1224,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/21.jpg",
-      "poster": "media/ritvales-2024/21.thumb.jpg",
-      "w": 1800,
-      "h": 1200,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/22.jpg",
-      "poster": "media/ritvales-2024/22.thumb.jpg",
-      "w": 1194,
-      "h": 1800,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/23.jpg",
-      "poster": "media/ritvales-2024/23.thumb.jpg",
-      "w": 1800,
-      "h": 1200,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/24.jpg",
-      "poster": "media/ritvales-2024/24.thumb.jpg",
-      "w": 1800,
-      "h": 1200,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/25.jpg",
-      "poster": "media/ritvales-2024/25.thumb.jpg",
-      "w": 1800,
-      "h": 1216,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/26.jpg",
-      "poster": "media/ritvales-2024/26.thumb.jpg",
-      "w": 1192,
-      "h": 1800,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/27.jpg",
-      "poster": "media/ritvales-2024/27.thumb.jpg",
-      "w": 1800,
-      "h": 1200,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/28.jpg",
-      "poster": "media/ritvales-2024/28.thumb.jpg",
-      "w": 1218,
-      "h": 1800,
-      "caption": ""
-    },
-    {
-      "type": "image",
-      "src": "media/ritvales-2024/29.jpg",
-      "poster": "media/ritvales-2024/29.thumb.jpg",
-      "w": 1200,
-      "h": 1800,
-      "caption": ""
-    },
+  "summary": {
+    "es": "Dirección visual y registro escénico en Festival Ritvales 2024: integración de visuales atmosféricos con iluminación masiva, láseres y arquitectura escenográfica electrónica.",
+    "en": "Visual direction and stage showcase at Ritvales Festival 2024: atmospheric visuals synchronized with massive festival lighting, lasers, and electronic stage architecture."
+  },
+  "poster": "media/behance/ritvales-2024/poster.jpg",
+  "preview": "media/behance/ritvales-2024/preview.mp4",
+  "w": 960,
+  "h": 540,
+  "color": "#9d4edd",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
     {
       "type": "video",
-      "src": "media/ritvales-2024/30.mp4",
-      "poster": "media/ritvales-2024/30.jpg",
+      "src": "media/behance/ritvales-2024/item_01.mp4",
+      "poster": "media/behance/ritvales-2024/item_01.poster.jpg",
       "w": 1280,
       "h": 720,
-      "caption": ""
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/behance/ritvales-2024/item_02.jpg",
+      "poster": "media/behance/ritvales-2024/item_02.jpg",
+      "w": 1600,
+      "h": 984,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/behance/ritvales-2024/item_03.jpg",
+      "poster": "media/behance/ritvales-2024/item_03.jpg",
+      "w": 1575,
+      "h": 2362,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/behance/ritvales-2024/item_04.jpg",
+      "poster": "media/behance/ritvales-2024/item_04.jpg",
+      "w": 1600,
+      "h": 1066,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/behance/ritvales-2024/item_05.jpg",
+      "poster": "media/behance/ritvales-2024/item_05.jpg",
+      "w": 1600,
+      "h": 1066,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/behance/ritvales-2024/item_06.jpg",
+      "poster": "media/behance/ritvales-2024/item_06.jpg",
+      "w": 1600,
+      "h": 1066,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/behance/ritvales-2024/item_07.jpg",
+      "poster": "media/behance/ritvales-2024/item_07.jpg",
+      "w": 1600,
+      "h": 1066,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/behance/ritvales-2024/item_08.jpg",
+      "poster": "media/behance/ritvales-2024/item_08.jpg",
+      "w": 1600,
+      "h": 1080,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
     }
   ],
-  "pixelmap": null
+  "pixelmap": {
+    "rig": "festival",
+    "label": "FESTIVAL-WIDE",
+    "canvas": [
+      1920,
+      1080
+    ],
+    "width": 10,
+    "cabinet": 120,
+    "bpm": 128,
+    "hardware": "Resolume Arena · 16:9 + 2× IMAG",
+    "slices": [
+      {
+        "name": {
+          "es": "PANTALLA CENTRAL",
+          "en": "CENTER WALL"
+        },
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "pos": [
+          0,
+          4.5
+        ],
+        "size": [
+          10,
+          5.625
+        ]
+      },
+      {
+        "name": {
+          "es": "IMAG IZQ",
+          "en": "IMAG LEFT"
+        },
+        "x": 640,
+        "y": 0,
+        "w": 640,
+        "h": 1080,
+        "pos": [
+          -8.2,
+          4.1
+        ],
+        "size": [
+          3,
+          5.06
+        ],
+        "ry": 0.35
+      },
+      {
+        "name": {
+          "es": "IMAG DER",
+          "en": "IMAG RIGHT"
+        },
+        "x": 640,
+        "y": 0,
+        "w": 640,
+        "h": 1080,
+        "pos": [
+          8.2,
+          4.1
+        ],
+        "size": [
+          3,
+          5.06
+        ],
+        "ry": -0.35
+      }
+    ],
+    "playlist": [
+      "media/behance/ritvales-2024/preview.mp4",
+      "media/behance/ritvales-2024/item_01.mp4"
+    ]
+  }
 }

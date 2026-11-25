@@ -1,0 +1,128 @@
+{
+  "id": "opossum-atelier",
+  "world": "games",
+  "order": 302,
+  "title": "OPOSSUM ATELIER",
+  "year": "2026",
+  "role": {
+    "es": "3D Stylized Prop & Environment Artist (Blender → Unity)",
+    "en": "3D Stylized Prop & Environment Artist (Blender → Unity)"
+  },
+  "tools": [
+    "Blender",
+    "Unity",
+    "100% Quads Topology",
+    "PBR 1024×1024"
+  ],
+  "summary": {
+    "es": "Videojuego cozy ambientado en Colombia (Zarigüeya Game). Modelado 3D y texturizado PBR de 8 props culturales y herramientas de gameplay con topología 100% Quads (0 Tris, 0 Ngons), geometría watertight manifold y un solo material PBR por activo (1 Draw Call) inspirado en la acuarela limpia de Botany Manor.",
+    "en": "Cozy game set in Colombia (Zarigüeya Game). 3D modeling and stylized PBR texturing of 8 cultural environment props and gameplay tools engineered with 100% pure Quad topology (0 Tris, 0 Ngons), watertight manifold meshes, and single-material 1024×1024 PBR atlases (1 Draw Call) inspired by Botany Manor."
+  },
+  "poster": "media/opossum-atelier/renders/hero-beauty.jpg",
+  "preview": "",
+  "color": "",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
+    {
+      "type": "video",
+      "src": "media/opossum-atelier/videos/clip_01_patio_props.mp4",
+      "poster": "media/opossum-atelier/videos/clip_01_patio_props_poster.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": {
+        "es": "Gameplay Unity — Patio Exterior y Props 3D (Palo de Mangos, Silla Rimax, Valla, Arbustos y Césped)",
+        "en": "Unity Gameplay — Outdoor Patio & 3D Props (Mango Tree, Rimax Chair, Fence, Bushes & Grass)"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/opossum-atelier/videos/clip_02_workshop.mp4",
+      "poster": "media/opossum-atelier/videos/clip_02_workshop_poster.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": {
+        "es": "Gameplay Unity — Exploración del Taller Cozy y Mesa de Trabajo",
+        "en": "Unity Gameplay — Cozy Atelier Interior & Workbench Exploration"
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/opossum-atelier/videos/clip_03_crafting.mp4",
+      "poster": "media/opossum-atelier/videos/clip_03_crafting_poster.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": {
+        "es": "Gameplay Unity — Modo Construcción, Ensamblaje y Pintura",
+        "en": "Unity Gameplay — Crafting, Assembly & Painting Mode"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/opossum-atelier/renders/hero-beauty.jpg",
+      "poster": "media/opossum-atelier/renders/hero-beauty.jpg",
+      "w": 1920,
+      "h": 970,
+      "caption": {
+        "es": "Portada Hero — 8 Props Cozy (Beauty)",
+        "en": "Hero Showcase — 8 Cozy Props (Beauty)"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/opossum-atelier/renders/hero-wireframe.jpg",
+      "poster": "media/opossum-atelier/renders/hero-wireframe.jpg",
+      "w": 1920,
+      "h": 970,
+      "caption": {
+        "es": "Portada Hero — Topología 100% Quads",
+        "en": "Hero Showcase — 100% Quads Wireframe"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/opossum-atelier/renders/01-silla-rimax-beauty.jpg",
+      "poster": "media/opossum-atelier/renders/01-silla-rimax-beauty.jpg",
+      "w": 1000,
+      "h": 1000,
+      "caption": {
+        "es": "01 — Silla Plástica Rimax (2,248 Quads)",
+        "en": "01 — Rimax Plastic Chair (2,248 Quads)"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/opossum-atelier/renders/02-palo-mangos-beauty.jpg",
+      "poster": "media/opossum-atelier/renders/02-palo-mangos-beauty.jpg",
+      "w": 1000,
+      "h": 1000,
+      "caption": {
+        "es": "02 — Palo de Mangos Tropical (2,224 Quads)",
+        "en": "02 — Tropical Mango Tree (2,224 Quads)"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/opossum-atelier/renders/03-aspiradora-beauty.jpg",
+      "poster": "media/opossum-atelier/renders/03-aspiradora-beauty.jpg",
+      "w": 1000,
+      "h": 1000,
+      "caption": {
+        "es": "03 — Aspiradora Cozy (5,216 Quads)",
+        "en": "03 — Cozy Vacuum Cleaner (5,216 Quads)"
+      }
+    },
+    {
+      "type": "image",
+      "src": "media/opossum-atelier/renders/04-pincel-beauty.jpg",
+      "poster": "media/opossum-atelier/renders/04-pincel-beauty.jpg",
+      "w": 1000,
+      "h": 1000,
+      "caption": {
+        "es": "04 — Pincel Artesanal (728 Quads)",
+        "en": "04 — Natural Bristle Paintbrush (728 Quads)"
+      }
+    }
+  ],
+  "pixelmap": null
+}

@@ -1,11 +1,39 @@
 # Configuración de Pages CMS (https://pagescms.org)
-# Sebas entra a app.pagescms.org con su cuenta de GitHub, abre este repositorio
-# y edita proyectos y textos con formularios. Cada cambio queda como commit y
-# GitHub Actions vuelve a publicar el sitio solo.
+# Sebas entra a app.pagescms.org con su cuenta de GitHub, abre este repositorio y edita
+# proyectos, mundos, hoja de vida y textos con formularios. Cada cambio queda como commit
+# y GitHub Actions vuelve a publicar el sitio solo. Todo es bilingüe: campos "es" y "en".
 
 media:
   input: public/media
   output: media
+
+components:
+  bi:
+    label: Texto bilingüe
+    type: object
+    fields:
+      - { name: es, label: Español, type: string }
+      - { name: en, label: English, type: string }
+  bitext:
+    label: Texto bilingüe largo
+    type: object
+    fields:
+      - { name: es, label: Español, type: text }
+      - { name: en, label: English, type: text }
+  mediaItem:
+    label: Medio
+    type: object
+    fields:
+      - name: type
+        label: Tipo
+        type: select
+        options: { values: [video, image, youtube] }
+      - { name: src, label: Archivo o URL, type: string }
+      - { name: poster, label: Póster / miniatura, type: string }
+      - { name: youtubeId, label: ID de YouTube (solo si es YouTube), type: string }
+      - { name: w, label: Ancho (px), type: number }
+      - { name: h, label: Alto (px), type: number }
+      - { name: caption, label: Pie de foto, component: bi }
 
 content:
   - name: projects
@@ -13,51 +41,45 @@ content:
     type: collection
     path: content/projects
     format: json
-    filename: "{fields.slug}.json"
+    filename: "{fields.id}.json"
     view:
-      fields: [title, category, year, order]
+      fields: [title, world, year, order]
       primary: title
-      sort: [order, year]
+      sort: [order]
     fields:
-      - { name: title, label: Título, type: string, required: true }
-      - { name: slug, label: Slug (URL y carpeta de medios), type: string, required: true, description: "Ej: peterblue-sonar-park-2026. Los archivos van en public/media/<slug>/" }
-      - name: category
-        label: Categoría
+      - { name: id, label: ID (URL), type: string, required: true }
+      - name: world
+        label: Mundo
         type: select
         required: true
         options:
           values:
-            - { value: visuales, label: Visuales }
-            - { value: motion, label: Motion graphics }
-            - { value: vr, label: VR / Real-time }
-      - { name: order, label: Orden en el índice, type: number }
-      - { name: featured, label: Destacado (tile grande en la grilla), type: boolean }
-      - { name: year, label: Año, type: number }
-      - { name: client, label: Cliente / artista, type: string }
-      - { name: event, label: Evento / lugar, type: string }
-      - { name: role, label: Rol, type: string, list: true }
+            - { value: stage, label: "01 · Stage & VJ" }
+            - { value: motion, label: "02 · Motion" }
+            - { value: vr, label: "03 · VR & Real-time" }
+            - { value: games, label: "04 · Videojuegos" }
+      - { name: order, label: Orden, type: number }
+      - { name: title, label: Título, type: string, required: true }
+      - { name: year, label: Año, type: string }
+      - { name: role, label: Rol, component: bi }
       - { name: tools, label: Herramientas, type: string, list: true }
-      - { name: summary, label: Resumen (una o dos frases), type: text }
-      - { name: body, label: Descripción, type: text }
-      - { name: credits, label: Créditos / aclaraciones, type: string }
-      - { name: behance, label: Link a Behance, type: string }
-      - { name: cover, label: Portada (video .mp4 o imagen), type: file }
-      - name: media
-        label: Material (galería)
+      - { name: summary, label: Resumen, component: bitext }
+      - { name: poster, label: Póster, type: string }
+      - { name: preview, label: Video de preview (.mp4), type: string }
+      - { name: w, label: Ancho del preview (px), type: number }
+      - { name: h, label: Alto del preview (px), type: number }
+      - { name: color, label: Color del proyecto (hex), type: string }
+      - { name: nodeType, label: Tipo de nodo (mundo VR), type: string }
+      - name: liveSet
+        label: Set en vivo (YouTube)
         type: object
-        list: true
         fields:
-          - name: type
-            label: Tipo
-            type: select
-            options: { values: [video, image] }
-          - { name: src, label: Archivo, type: file }
-          - { name: poster, label: Póster / miniatura, type: image }
-          - { name: w, label: Ancho (px), type: number }
-          - { name: h, label: Alto (px), type: number }
-          - { name: caption, label: Pie de foto, type: string }
+          - { name: youtubeId, label: ID de YouTube, type: string }
+          - { name: url, label: URL, type: string }
+          - { name: label, label: Texto del botón, component: bi }
+      - { name: gallery, label: Galería, component: mediaItem, list: true }
       - name: pixelmap
-        label: Pixel map (vista 3D del escenario) — dejar vacío si no aplica
+        label: Pixel map / escenario 3D (solo mundo 01)
         type: object
         fields:
           - name: rig
@@ -65,28 +87,65 @@ content:
             type: select
             options:
               values:
-                - { value: square, label: Pantalla cuadrada / rectangular }
+                - { value: square, label: Cuadrada / rectangular }
                 - { value: cross, label: Cruz }
-                - { value: custom, label: Personalizado }
-          - { name: label, label: Nombre del rig (HUD), type: string }
-          - { name: canvas, label: "Lienzo de la composición [ancho, alto] en px", type: number, list: true }
-          - { name: width, label: Ancho físico del lienzo (metros), type: number }
-          - { name: cabinet, label: Tamaño de gabinete LED (px), type: number }
-          - { name: bpm, label: BPM del show, type: number }
-          - { name: image, label: Plantilla del pixel map (PNG de Resolume), type: image }
+                - { value: multi, label: Multi-pantalla (un video por pantalla) }
+                - { value: curved, label: Pared curva panorámica }
+                - { value: festival, label: Festival genérico (16:9 + IMAG) }
+          - { name: label, label: Nombre del rig, type: string }
+          - { name: canvas, label: "Lienzo [ancho, alto] px", type: number, list: true }
+          - { name: width, label: Ancho físico del lienzo (m), type: number }
+          - { name: cabinet, label: Gabinete LED (px), type: number }
+          - { name: curve, label: Curvatura (radianes, rig curvo), type: number }
+          - { name: bpm, label: BPM, type: number }
+          - { name: hardware, label: Hardware / salida, type: string }
+          - { name: image, label: Plantilla del pixel map, type: string }
           - name: slices
-            label: Slices (copiados de Resolume › Advanced Output)
+            label: Slices (Resolume › Advanced Output)
             type: object
             list: true
             fields:
-              - { name: name, label: Nombre, type: string }
-              - { name: x, label: X (px), type: number }
-              - { name: y, label: Y (px), type: number }
-              - { name: w, label: Ancho (px), type: number }
-              - { name: h, label: Alto (px), type: number }
-              - { name: z, label: Profundidad en metros (opcional), type: number }
-              - { name: ry, label: Rotación Y en radianes (opcional), type: number }
-          - { name: playlist, label: Clips de la pantalla 3D (en orden), type: file, list: true }
+              - { name: name, label: Nombre, component: bi }
+              - { name: x, label: X, type: number }
+              - { name: y, label: Y, type: number }
+              - { name: w, label: Ancho, type: number }
+              - { name: h, label: Alto, type: number }
+              - { name: physical, label: Medida física, type: string }
+              - { name: src, label: Fuente (rig multi), type: string }
+              - { name: pos, label: "Posición [x, y] m (opcional)", type: number, list: true }
+              - { name: size, label: "Tamaño [w, h] m (opcional)", type: number, list: true }
+              - { name: ry, label: Rotación Y (rad), type: number }
+          - { name: playlist, label: Clips de la pantalla, type: string, list: true }
+          - name: scenes
+            label: Escenas (rig multi)
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Nombre, type: string }
+              - name: sources
+                label: Videos por fuente
+                type: object
+                fields:
+                  - { name: cenefa, label: Cenefa, type: string }
+                  - { name: central, label: Central, type: string }
+                  - { name: lateral, label: Laterales, type: string }
+
+  - name: worlds
+    label: Mundos
+    type: file
+    path: content/worlds.json
+    format: json
+    list: true
+    fields:
+      - { name: id, label: ID, type: string }
+      - { name: index, label: Número, type: string }
+      - { name: accent, label: Color de acento, type: string }
+      - { name: shortName, label: Nombre corto, component: bi }
+      - { name: name, label: Nombre, component: bi }
+      - { name: tagline, label: Bajada, component: bi }
+      - { name: coords, label: Coordenadas (decorativo), type: string }
+      - { name: preview, label: Video de la tarjeta, type: string }
+      - { name: poster, label: Póster de la tarjeta, type: string }
 
   - name: site
     label: Sitio (bio y contacto)
@@ -99,11 +158,12 @@ content:
       - { name: handle, label: Usuario de Instagram, type: string }
       - { name: city, label: Ciudad, type: string }
       - { name: timezone, label: Zona horaria, type: string }
-      - { name: roles, label: Roles, type: string, list: true }
-      - { name: bio, label: Bio, type: text }
-      - { name: services, label: Servicios, type: string, list: true }
-      - { name: tools, label: Herramientas, type: string, list: true }
+      - { name: roleLine, label: Línea de roles (separados por ·), type: string }
+      - { name: role, label: Rol, component: bi }
+      - { name: bio, label: Bio, component: bitext }
+      - { name: heroSubtitle, label: Texto del hub, component: bitext }
       - { name: email, label: Correo, type: string }
-      - { name: instagram, label: Instagram (URL), type: string }
-      - { name: behance, label: Behance (URL), type: string }
+      - { name: linkedin, label: LinkedIn, type: string }
+      - { name: instagram, label: Instagram, type: string }
+      - { name: behance, label: Behance, type: string }
       - { name: available, label: Disponible, type: boolean }

@@ -1,32 +1,41 @@
 {
-  "title": "Showreel TouchDesigner",
-  "slug": "showreel-touchdesigner",
-  "category": "vr",
-  "order": 18,
-  "featured": true,
-  "year": 2025,
-  "client": "Reel",
-  "event": "",
-  "role": [
-    "Arte generativo",
-    "Creative coding"
-  ],
+  "id": "showreel-touchdesigner",
+  "world": "vr",
+  "order": 202,
+  "title": "SHOWREEL TOUCHDESIGNER",
+  "year": "2025",
+  "role": {
+    "es": "Creative Technologist & Real-Time Artist",
+    "en": "Creative Technologist & Real-Time Artist"
+  },
   "tools": [
-    "TouchDesigner"
+    "TouchDesigner",
+    "GLSL",
+    "Audio-Reactive",
+    "Instancing"
   ],
-  "summary": "Reel de arte generativo y creative coding en TouchDesigner.",
-  "body": "Sistemas de partículas, feedback, ruido y audio-reactividad: piezas generadas en tiempo real.",
-  "credits": "",
-  "behance": "https://www.behance.net/gallery/232077239/SHOWREEL-TOUCHDESIGNER",
-  "cover": "media/showreel-touchdesigner/01.mp4",
-  "media": [
+  "summary": {
+    "es": "Showreel principal en tiempo real desarrollado en TouchDesigner: sistemas generativos, instancing GPU, feedback óptico, tracking interactivo y síntesis audiovisual en vivo.",
+    "en": "Flagship real-time showreel built in TouchDesigner: generative systems, GPU instancing, optical feedback, interactive tracking, and live audiovisual synthesis."
+  },
+  "poster": "media/behance/showreel-touchdesigner/poster.jpg",
+  "preview": "media/behance/showreel-touchdesigner/preview.mp4",
+  "w": 960,
+  "h": 540,
+  "color": "",
+  "nodeType": "COMP_OUT",
+  "liveSet": null,
+  "gallery": [
     {
       "type": "video",
-      "src": "media/showreel-touchdesigner/01.mp4",
-      "poster": "media/showreel-touchdesigner/01.jpg",
+      "src": "media/behance/showreel-touchdesigner/item_01.mp4",
+      "poster": "media/behance/showreel-touchdesigner/item_01.poster.jpg",
       "w": 1280,
       "h": 720,
-      "caption": ""
+      "caption": {
+        "es": "",
+        "en": ""
+      }
     }
   ],
   "pixelmap": null

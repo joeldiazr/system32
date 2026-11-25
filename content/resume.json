@@ -1,0 +1,270 @@
+{
+  "title": {
+    "en": "INTERACTIVE & 3D MOTION DESIGNER | TECHNICAL ARTIST",
+    "es": "DISEÑADOR INTERACTIVO Y 3D MOTION | TECHNICAL ARTIST"
+  },
+  "summary": {
+    "en": "Multidisciplinary Interactive Designer, Motion Graphics & 3D Artist, and Technical Artist specializing in real-time visual systems, game engines, and interactive installations. Proven track record delivering Technical Art, 3D environment props, and VFX in Unity for titles like Taw Breaker and Opossum Atelier, real-time live visuals for international stages such as Sónar Barcelona, and interactive VR experiences. Expert in bridging 3D artistic workflows (Blender, Maya) with real-time execution in Unity, TouchDesigner, and Resolume Arena.",
+    "es": "Diseñador interactivo multidisciplinar, artista de Motion Graphics y 3D, y Technical Artist especializado en sistemas visuales en tiempo real, motores de videojuegos e instalaciones interactivas. Trayectoria comprobada entregando Technical Art, props de entorno 3D y VFX en Unity para títulos como Taw Breaker y Opossum Atelier, visuales en vivo para escenarios internacionales como Sónar Barcelona y experiencias interactivas de VR. Experto en conectar flujos de trabajo artísticos 3D (Blender, Maya) con ejecución en tiempo real en Unity, TouchDesigner y Resolume Arena."
+  },
+  "highlights": [
+    {
+      "value": "SÓNAR",
+      "label": {
+        "en": "BARCELONA 2024 · LIVE VISUALS",
+        "es": "BARCELONA 2024 · VISUALES EN VIVO"
+      }
+    },
+    {
+      "value": "60+ FPS",
+      "label": {
+        "en": "LOCKED BUILD PERFORMANCE",
+        "es": "RENDIMIENTO BLOQUEADO EN BUILDS"
+      }
+    },
+    {
+      "value": "QUEST 3",
+      "label": {
+        "en": "VR GAME IN UNITY",
+        "es": "JUEGO VR EN UNITY"
+      }
+    },
+    {
+      "value": "EAFIT",
+      "label": {
+        "en": "B.S. INTERACTIVE DESIGN",
+        "es": "DISEÑO INTERACTIVO"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "title": {
+        "en": "ENGINES & TECHNICAL ART",
+        "es": "MOTORES & TECHNICAL ART"
+      },
+      "items": [
+        "Unity (URP)",
+        "Shader Graph",
+        "VFX Graph",
+        "Unreal Engine",
+        "3D Asset Optimization",
+        "Real-Time Profiling"
+      ]
+    },
+    {
+      "title": {
+        "en": "LIVE SYSTEMS & VISUALS",
+        "es": "SISTEMAS EN VIVO & VISUALES"
+      },
+      "items": [
+        "TouchDesigner",
+        "Resolume Arena",
+        "Projection Mapping",
+        "Low-Latency Video Routing",
+        "Camera Feeds"
+      ]
+    },
+    {
+      "title": {
+        "en": "MOTION GRAPHICS & 3D",
+        "es": "MOTION GRAPHICS & 3D"
+      },
+      "items": [
+        "Motion Graphics",
+        "Blender",
+        "Autodesk Maya",
+        "After Effects",
+        "Premiere Pro",
+        "VR (Meta Quest 3)"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": {
+        "en": "English",
+        "es": "Inglés"
+      },
+      "level": {
+        "en": "Professional Working Proficiency",
+        "es": "Dominio profesional de trabajo"
+      }
+    },
+    {
+      "name": {
+        "en": "Spanish",
+        "es": "Español"
+      },
+      "level": {
+        "en": "Native",
+        "es": "Nativo"
+      }
+    }
+  ],
+  "experience": [
+    {
+      "role": {
+        "en": "Interactive Experience Designer",
+        "es": "Diseñador de Experiencias Interactivas"
+      },
+      "company": "Telemedellín",
+      "place": "Medellín, Colombia",
+      "dates": {
+        "en": "Jan 2025 – Jul 2025",
+        "es": "Ene 2025 – Jul 2025"
+      },
+      "bullets": {
+        "en": [
+          "Architected and deployed interactive brand experiences for Tour Telemedellín, including an immersive VR game built in Unity for Meta Quest 3.",
+          "Programmed computer-vision installations in TouchDesigner, translating audience body movement into real-time interactive visuals."
+        ],
+        "es": [
+          "Diseñé y desplegué experiencias interactivas de marca para Tour Telemedellín, incluyendo un juego inmersivo de VR en Unity para Meta Quest 3.",
+          "Programé instalaciones de visión por computador en TouchDesigner que traducen el movimiento del público en visuales interactivos en tiempo real."
+        ]
+      }
+    },
+    {
+      "role": {
+        "en": "Technical Artist & 3D Modeler — Taw Breaker & Opossum Atelier",
+        "es": "Technical Artist & Modelador 3D — Taw Breaker & Opossum Atelier"
+      },
+      "company": "Antilife Studio",
+      "place": "Medellín, Colombia",
+      "dates": {
+        "en": "Aug 2024 – Present",
+        "es": "Ago 2024 – Actualidad"
+      },
+      "current": true,
+      "bullets": {
+        "en": [
+          "Architected the Technical Art pipeline for Taw Breaker in Unity (URP), authoring custom shaders, dynamic materials, and real-time VFX.",
+          "Model and texture modular interior and exterior 3D environment props, structures, and assets in Blender for new title Opossum Atelier.",
+          "Optimize 3D asset topology, UV unwrapping, draw calls, and lighting to maintain a locked 60+ FPS performance across game builds."
+        ],
+        "es": [
+          "Diseñé el pipeline de Technical Art de Taw Breaker en Unity (URP): shaders personalizados, materiales dinámicos y VFX en tiempo real.",
+          "Modelo y texturizo props, estructuras y assets modulares de interior y exterior en Blender para el nuevo título Opossum Atelier.",
+          "Optimizo topología, UVs, draw calls e iluminación para mantener un rendimiento estable de 60+ FPS en las builds del juego."
+        ]
+      }
+    },
+    {
+      "role": {
+        "en": "Live Visual Engineer & Systems Operator",
+        "es": "Ingeniero de Visuales en Vivo y Operador de Sistemas"
+      },
+      "company": "WAWADUQUE S.A.S",
+      "place": "Colombia (Freelance)",
+      "dates": {
+        "en": "Feb 2024 – Present",
+        "es": "Feb 2024 – Actualidad"
+      },
+      "current": true,
+      "bullets": {
+        "en": [
+          "Engineered and deployed real-time concert visual environments and multi-projector mapping systems across major nationwide concert arenas.",
+          "Built and routed closed-loop broadcast camera pipelines, integrating low-latency live performer feeds into real-time generative stage LED graphics."
+        ],
+        "es": [
+          "Diseñé y desplegué entornos visuales de concierto en tiempo real y sistemas de mapping multiproyector en grandes arenas del país.",
+          "Construí y enruté pipelines de cámaras broadcast en circuito cerrado, integrando señales de artistas en vivo con baja latencia en gráficos LED generativos."
+        ]
+      }
+    },
+    {
+      "role": {
+        "en": "VJ & Motion Graphics / 3D Designer",
+        "es": "VJ & Diseñador Motion Graphics / 3D"
+      },
+      "company": "Breakfast Club & Salón Amador",
+      "place": "Medellín, Colombia (Freelance)",
+      "dates": {
+        "en": "Mar 2023 – Present",
+        "es": "Mar 2023 – Actualidad"
+      },
+      "current": true,
+      "bullets": {
+        "en": [
+          "Direct and execute real-time generative visual shows for high-profile nightlife events utilizing Resolume Arena and TouchDesigner.",
+          "Model, texture, and animate custom 2D/3D motion graphics and visual loops using Blender, Unreal Engine, and After Effects tailored to diverse artist sets."
+        ],
+        "es": [
+          "Dirijo y ejecuto shows visuales generativos en tiempo real para eventos nocturnos de alto perfil con Resolume Arena y TouchDesigner.",
+          "Modelo, texturizo y animo motion graphics y loops 2D/3D a medida en Blender, Unreal Engine y After Effects para los sets de cada artista."
+        ]
+      }
+    },
+    {
+      "role": {
+        "en": "Live Visual Artist & VJ — Alba Franch & PETERBLUE",
+        "es": "Artista Visual en Vivo y VJ — Alba Franch & PETERBLUE"
+      },
+      "company": "Sónar Festival (Sónar Barcelona)",
+      "place": "Barcelona, Spain (Freelance)",
+      "dates": {
+        "en": "Jun 2024",
+        "es": "Jun 2024"
+      },
+      "bullets": {
+        "en": [
+          "Produced and animated custom 3D visual assets and motion loops using Blender and After Effects for artists Alba Franch and PETERBLUE.",
+          "Operated live audio-reactive visual playback and synchronization in Resolume Arena and TouchDesigner, maintaining zero latency across dynamic BPM shifts."
+        ],
+        "es": [
+          "Produje y animé assets visuales 3D y loops de motion a medida con Blender y After Effects para los artistas Alba Franch y PETERBLUE.",
+          "Operé reproducción y sincronización audio-reactiva en vivo en Resolume Arena y TouchDesigner, sin latencia a través de cambios dinámicos de BPM."
+        ]
+      }
+    },
+    {
+      "role": {
+        "en": "Interactive Media & Audiovisual Contractor",
+        "es": "Contratista de Medios Interactivos y Audiovisuales"
+      },
+      "company": "Comfama",
+      "place": "Medellín, Colombia",
+      "dates": {
+        "en": "Feb 2024 – Nov 2024",
+        "es": "Feb 2024 – Nov 2024"
+      },
+      "bullets": {
+        "en": [
+          "Delivered responsive audiovisual installations and projection mappings for large-scale corporate and technology conventions.",
+          "Integrated real-time interactive graphic systems via TouchDesigner and managed multi-projector alignment with Resolume Arena."
+        ],
+        "es": [
+          "Entregué instalaciones audiovisuales interactivas y proyecciones mapeadas para convenciones corporativas y tecnológicas de gran escala.",
+          "Integré sistemas gráficos interactivos en tiempo real con TouchDesigner y gestioné la alineación multiproyector con Resolume Arena."
+        ]
+      }
+    }
+  ],
+  "education": [
+    {
+      "title": {
+        "en": "Bachelor of Science in Interactive Design",
+        "es": "Pregrado en Diseño Interactivo"
+      },
+      "school": "Universidad EAFIT",
+      "place": "Medellín, Colombia",
+      "dates": {
+        "en": "Feb 2021 – Jun 2026 (Expected)",
+        "es": "Feb 2021 – Jun 2026 (Esperado)"
+      }
+    },
+    {
+      "title": {
+        "en": "Interactive Technology Program (120 Hours)",
+        "es": "Programa de Tecnología Interactiva (120 Horas)"
+      },
+      "school": "Ubicua Technology",
+      "place": "Medellín, Colombia",
+      "dates": {
+        "en": "Jan 2022 – Jun 2022",
+        "es": "Ene 2022 – Jun 2022"
+      }
+    }
+  ]
+}

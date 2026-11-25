@@ -4,29 +4,21 @@
   "handle": "system.032",
   "city": "Medellín, CO",
   "timezone": "America/Bogota",
-  "roles": [
-    "Visual generalist",
-    "VJ",
-    "Motion designer"
-  ],
-  "bio": "Sebastián Hincapié, también conocido como System32, es un generalista visual de Medellín. Hace visuales para escenarios, opera en vivo como VJ y anima motion graphics y 3D para artistas, festivales y marcas. Se mueve entre Resolume, TouchDesigner, Blender, After Effects y Unreal Engine.",
-  "services": [
-    "Visuales y contenido para pantallas LED",
-    "VJ y operación en vivo (Resolume Arena)",
-    "Pixel mapping y escenarios a medida",
-    "Motion graphics 2D / 3D",
-    "Experiencias VR y tiempo real",
-    "Arte generativo (TouchDesigner)"
-  ],
-  "tools": [
-    "Resolume Arena",
-    "TouchDesigner",
-    "After Effects",
-    "Blender",
-    "Unreal Engine 5",
-    "Premiere Pro"
-  ],
-  "email": "",
+  "roleLine": "TECHNICAL ARTIST · REAL-TIME VISUALS · LIVE VJ · 3D PROP ARTIST",
+  "role": {
+    "es": "Technical Artist · Real-Time Visuals · 3D & Live VJ",
+    "en": "Technical Artist · Real-Time Visuals · 3D & Live VJ"
+  },
+  "bio": {
+    "es": "Artista técnico y creador visual híbrido enfocado en unir arte 3D, shaders, sistemas interactivos en tiempo real y visuales para festivales en vivo. Mi trabajo abarca desde pipelines game-ready en Blender y Unity (VFX, iluminación, shaders y props 100% Quads) hasta visuales generativos en TouchDesigner, Unreal Engine, VR y shows masivos con Resolume Arena.",
+    "en": "Hybrid technical artist and visual creator bridging 3D art, custom shaders, real-time interactive systems, and large-scale live festival visuals. My pipeline spans game-ready assets and VFX in Blender & Unity (100% Quad topology, dynamic HDR shaders, lighting) to generative visuals in TouchDesigner, Unreal Engine, VR, and live stage direction in Resolume Arena."
+  },
+  "heroSubtitle": {
+    "es": "Explora cuatro mundos interactivos en 3D construidos alrededor de cada disciplina: escenarios de festival con pixelmaps reales a escala, estudio cinético de motion graphics, laboratorio espacial VR & TouchDesigner y motor interactivo de videojuegos.",
+    "en": "Explore four interactive 3D worlds built around each discipline: live festival stages built to real LED pixelmaps, kinetic motion graphics studio, spatial VR & TouchDesigner node lab, and an interactive game engine showcase."
+  },
+  "email": "sebashinca13@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/sebastianhin",
   "instagram": "https://www.instagram.com/system.032/",
   "behance": "https://www.behance.net/sebastihincapi12",
   "available": true

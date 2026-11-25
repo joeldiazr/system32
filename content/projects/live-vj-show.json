@@ -1,0 +1,138 @@
+{
+  "id": "live-vj-show",
+  "world": "stage",
+  "order": 9,
+  "title": "MOTION GRAPHICS AND LIVE VJ SHOW",
+  "year": "2025",
+  "role": {
+    "es": "Live VJ & Motion Designer",
+    "en": "Live VJ & Motion Designer"
+  },
+  "tools": [
+    "Resolume Arena",
+    "After Effects",
+    "TouchDesigner"
+  ],
+  "summary": {
+    "es": "Compilación de visuales de alto contraste y performance en vivo mezclando motion graphics geométrico con disparo audiorreactivo en escenario.",
+    "en": "High-contrast live visual performance combining geometric motion graphics with audio-reactive stage triggering."
+  },
+  "poster": "media/behance/live-vj-show/poster.jpg",
+  "preview": "media/behance/live-vj-show/preview.mp4",
+  "w": 960,
+  "h": 540,
+  "color": "#00f0ff",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
+    {
+      "type": "video",
+      "src": "media/behance/live-vj-show/item_01.mp4",
+      "poster": "media/behance/live-vj-show/item_01.poster.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/behance/live-vj-show/item_02.mp4",
+      "poster": "media/behance/live-vj-show/item_02.poster.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/behance/live-vj-show/item_03.mp4",
+      "poster": "media/behance/live-vj-show/item_03.poster.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    }
+  ],
+  "pixelmap": {
+    "rig": "festival",
+    "label": "FESTIVAL-WIDE",
+    "canvas": [
+      1920,
+      1080
+    ],
+    "width": 10,
+    "cabinet": 120,
+    "bpm": 128,
+    "hardware": "Resolume Arena · 16:9 + 2× IMAG",
+    "slices": [
+      {
+        "name": {
+          "es": "PANTALLA CENTRAL",
+          "en": "CENTER WALL"
+        },
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 1080,
+        "pos": [
+          0,
+          4.5
+        ],
+        "size": [
+          10,
+          5.625
+        ]
+      },
+      {
+        "name": {
+          "es": "IMAG IZQ",
+          "en": "IMAG LEFT"
+        },
+        "x": 640,
+        "y": 0,
+        "w": 640,
+        "h": 1080,
+        "pos": [
+          -8.2,
+          4.1
+        ],
+        "size": [
+          3,
+          5.06
+        ],
+        "ry": 0.35
+      },
+      {
+        "name": {
+          "es": "IMAG DER",
+          "en": "IMAG RIGHT"
+        },
+        "x": 640,
+        "y": 0,
+        "w": 640,
+        "h": 1080,
+        "pos": [
+          8.2,
+          4.1
+        ],
+        "size": [
+          3,
+          5.06
+        ],
+        "ry": -0.35
+      }
+    ],
+    "playlist": [
+      "media/behance/live-vj-show/preview.mp4",
+      "media/behance/live-vj-show/item_01.mp4",
+      "media/behance/live-vj-show/item_02.mp4",
+      "media/behance/live-vj-show/item_03.mp4"
+    ]
+  }
+}

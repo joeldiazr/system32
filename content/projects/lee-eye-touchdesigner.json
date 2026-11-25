@@ -1,0 +1,74 @@
+{
+  "id": "lee-eye-touchdesigner",
+  "world": "vr",
+  "order": 203,
+  "title": "LEE EYE - VIDEO LYRICS & TOUCHDESIGNER",
+  "year": "2025",
+  "role": {
+    "es": "Real-Time Visuals & Lyric System",
+    "en": "Real-Time Visuals & Lyric System"
+  },
+  "tools": [
+    "TouchDesigner",
+    "After Effects",
+    "Audio Analysis"
+  ],
+  "summary": {
+    "es": "Cuatro piezas audiovisuales para Lee Eye integrando tipografía reactiva al audio y procesamiento generativo en tiempo real con TouchDesigner.",
+    "en": "Four audiovisual pieces for Lee Eye combining audio-reactive lyric typography and real-time generative processing in TouchDesigner."
+  },
+  "poster": "media/behance/lee-eye-touchdesigner/poster.jpg",
+  "preview": "media/behance/lee-eye-touchdesigner/preview.mp4",
+  "w": 960,
+  "h": 540,
+  "color": "",
+  "nodeType": "CHOP_AUDIO",
+  "liveSet": null,
+  "gallery": [
+    {
+      "type": "video",
+      "src": "media/behance/lee-eye-touchdesigner/item_01.mp4",
+      "poster": "media/behance/lee-eye-touchdesigner/item_01.poster.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/behance/lee-eye-touchdesigner/item_02.mp4",
+      "poster": "media/behance/lee-eye-touchdesigner/item_02.poster.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/behance/lee-eye-touchdesigner/item_03.mp4",
+      "poster": "media/behance/lee-eye-touchdesigner/item_03.poster.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    },
+    {
+      "type": "video",
+      "src": "media/behance/lee-eye-touchdesigner/item_04.mp4",
+      "poster": "media/behance/lee-eye-touchdesigner/item_04.poster.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
+    }
+  ],
+  "pixelmap": null
+}

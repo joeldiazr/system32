@@ -1,31 +1,40 @@
 {
-  "title": "Samer Yoga — El sol sale para todos",
-  "slug": "samer-yoga",
-  "category": "motion",
-  "order": 13,
-  "featured": false,
-  "year": 2026,
-  "client": "Samer Yoga",
-  "event": "",
-  "role": [
-    "Animación 2D"
-  ],
+  "id": "samer-yoga",
+  "world": "motion",
+  "order": 103,
+  "title": "SAMER YOGA - EL SOL SALE PARA TODOS",
+  "year": "2025",
+  "role": {
+    "es": "Dirección de Animación & Motion",
+    "en": "Animation Direction & Motion"
+  },
   "tools": [
-    "After Effects"
+    "Adobe After Effects",
+    "Motion Graphics",
+    "Sound Sync"
   ],
-  "summary": "Animación para el lanzamiento de «El sol sale para todos», el nuevo producto de Samer Yoga.",
-  "body": "Una pieza sencilla y cálida en After Effects para acompañar el lanzamiento.",
-  "credits": "",
-  "behance": "https://www.behance.net/gallery/242571377/SAMER-YOGA-EL-SOL-SALE-PARA-TODOS",
-  "cover": "media/samer-yoga/01.mp4",
-  "media": [
+  "summary": {
+    "es": "Pieza audiovisual de campaña con narrativa cálida, composición orgánica y animaciones fluidas diseñadas para transmitir calma y luminosidad.",
+    "en": "Warm campaign motion piece featuring organic composition and fluid animation crafted to convey calm and radiance."
+  },
+  "poster": "media/behance/samer-yoga/poster.jpg",
+  "preview": "media/behance/samer-yoga/preview.mp4",
+  "w": 960,
+  "h": 1706,
+  "color": "#0096ff",
+  "nodeType": "",
+  "liveSet": null,
+  "gallery": [
     {
       "type": "video",
-      "src": "media/samer-yoga/01.mp4",
-      "poster": "media/samer-yoga/01.jpg",
-      "w": 720,
-      "h": 1280,
-      "caption": ""
+      "src": "media/behance/samer-yoga/item_01.mp4",
+      "poster": "media/behance/samer-yoga/item_01.poster.jpg",
+      "w": 1080,
+      "h": 1920,
+      "caption": {
+        "es": "",
+        "en": ""
+      }
     }
   ],
   "pixelmap": null
