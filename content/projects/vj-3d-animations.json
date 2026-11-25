@@ -1,0 +1,179 @@
+{
+  "title": "VJ loops & animación 3D",
+  "slug": "vj-3d-animations",
+  "category": "visuales",
+  "order": 9,
+  "featured": false,
+  "year": 2026,
+  "client": "Varios",
+  "event": "",
+  "role": [
+    "Animación 3D",
+    "Loops para VJ"
+  ],
+  "tools": [
+    "Blender",
+    "After Effects",
+    "TouchDesigner"
+  ],
+  "summary": "Una colección de loops y animaciones 3D hechas para pantallas de shows y fiestas.",
+  "body": "Material de archivo: loops pensados para repetirse sin costuras, animaciones 3D y pruebas que terminaron en pantallas de distintos escenarios.",
+  "credits": "",
+  "behance": "",
+  "cover": "media/vj-3d-animations/16.mp4",
+  "media": [
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/01.mp4",
+      "poster": "media/vj-3d-animations/01.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/02.mp4",
+      "poster": "media/vj-3d-animations/02.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/03.mp4",
+      "poster": "media/vj-3d-animations/03.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/04.mp4",
+      "poster": "media/vj-3d-animations/04.jpg",
+      "w": 1280,
+      "h": 674,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/05.mp4",
+      "poster": "media/vj-3d-animations/05.jpg",
+      "w": 1280,
+      "h": 674,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/06.mp4",
+      "poster": "media/vj-3d-animations/06.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/07.mp4",
+      "poster": "media/vj-3d-animations/07.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/08.mp4",
+      "poster": "media/vj-3d-animations/08.jpg",
+      "w": 960,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/09.mp4",
+      "poster": "media/vj-3d-animations/09.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/10.mp4",
+      "poster": "media/vj-3d-animations/10.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/11.mp4",
+      "poster": "media/vj-3d-animations/11.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/12.mp4",
+      "poster": "media/vj-3d-animations/12.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/13.mp4",
+      "poster": "media/vj-3d-animations/13.jpg",
+      "w": 1280,
+      "h": 974,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/14.mp4",
+      "poster": "media/vj-3d-animations/14.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/15.mp4",
+      "poster": "media/vj-3d-animations/15.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/16.mp4",
+      "poster": "media/vj-3d-animations/16.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/17.mp4",
+      "poster": "media/vj-3d-animations/17.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/18.mp4",
+      "poster": "media/vj-3d-animations/18.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/vj-3d-animations/19.mp4",
+      "poster": "media/vj-3d-animations/19.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    }
+  ],
+  "pixelmap": null
+}

@@ -1,0 +1,84 @@
+{
+  "title": "Románticas de Oro",
+  "slug": "romanticas-de-oro",
+  "category": "visuales",
+  "order": 4,
+  "featured": false,
+  "year": 2026,
+  "client": "Oropesa Tenor",
+  "event": "Show en vivo",
+  "role": [
+    "Dirección creativa",
+    "Animación 3D",
+    "Visuales de show"
+  ],
+  "tools": [
+    "Blender",
+    "After Effects",
+    "TouchDesigner"
+  ],
+  "summary": "Dirección creativa y animaciones para Románticas de Oro, el proyecto de Oropesa Tenor que trae de vuelta la música romántica latina de otras épocas.",
+  "body": "Un universo dorado y nostálgico para la pantalla del show: animación 3D en Blender, piezas de motion en After Effects y procesos generativos en TouchDesigner, pensados para acompañar boleros y baladas en vivo.",
+  "credits": "",
+  "behance": "https://www.behance.net/gallery/245999019/ROMANTICAS-DE-ORO-SHOW",
+  "cover": "media/romanticas-de-oro/07.mp4",
+  "media": [
+    {
+      "type": "video",
+      "src": "media/romanticas-de-oro/01.mp4",
+      "poster": "media/romanticas-de-oro/01.jpg",
+      "w": 720,
+      "h": 1280,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/romanticas-de-oro/02.mp4",
+      "poster": "media/romanticas-de-oro/02.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/romanticas-de-oro/03.mp4",
+      "poster": "media/romanticas-de-oro/03.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/romanticas-de-oro/04.mp4",
+      "poster": "media/romanticas-de-oro/04.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "image",
+      "src": "media/romanticas-de-oro/05.jpg",
+      "poster": "media/romanticas-de-oro/05.thumb.jpg",
+      "w": 1800,
+      "h": 1012,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/romanticas-de-oro/06.mp4",
+      "poster": "media/romanticas-de-oro/06.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/romanticas-de-oro/07.mp4",
+      "poster": "media/romanticas-de-oro/07.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    }
+  ],
+  "pixelmap": null
+}

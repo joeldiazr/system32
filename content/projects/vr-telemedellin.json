@@ -1,0 +1,32 @@
+{
+  "title": "Juego VR — Telemedellín",
+  "slug": "vr-telemedellin",
+  "category": "vr",
+  "order": 16,
+  "featured": true,
+  "year": 2025,
+  "client": "Telemedellín",
+  "event": "",
+  "role": [
+    "Experiencia VR"
+  ],
+  "tools": [
+    "Unreal Engine 5"
+  ],
+  "summary": "Experiencia de realidad virtual tipo juego para Telemedellín.",
+  "body": "Un juego en realidad virtual pensado para que el público explore y juegue dentro de un mundo 3D.",
+  "credits": "",
+  "behance": "",
+  "cover": "media/vr-telemedellin/01.mp4",
+  "media": [
+    {
+      "type": "video",
+      "src": "media/vr-telemedellin/01.mp4",
+      "poster": "media/vr-telemedellin/01.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    }
+  ],
+  "pixelmap": null
+}

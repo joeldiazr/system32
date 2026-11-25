@@ -1,0 +1,33 @@
+{
+  "name": "Sebastián Hincapié",
+  "alias": "SYSTEM32",
+  "handle": "system.032",
+  "city": "Medellín, CO",
+  "timezone": "America/Bogota",
+  "roles": [
+    "Visual generalist",
+    "VJ",
+    "Motion designer"
+  ],
+  "bio": "Sebastián Hincapié, también conocido como System32, es un generalista visual de Medellín. Hace visuales para escenarios, opera en vivo como VJ y anima motion graphics y 3D para artistas, festivales y marcas. Se mueve entre Resolume, TouchDesigner, Blender, After Effects y Unreal Engine.",
+  "services": [
+    "Visuales y contenido para pantallas LED",
+    "VJ y operación en vivo (Resolume Arena)",
+    "Pixel mapping y escenarios a medida",
+    "Motion graphics 2D / 3D",
+    "Experiencias VR y tiempo real",
+    "Arte generativo (TouchDesigner)"
+  ],
+  "tools": [
+    "Resolume Arena",
+    "TouchDesigner",
+    "After Effects",
+    "Blender",
+    "Unreal Engine 5",
+    "Premiere Pro"
+  ],
+  "email": "",
+  "instagram": "https://www.instagram.com/system.032/",
+  "behance": "https://www.behance.net/sebastihincapi12",
+  "available": true
+}

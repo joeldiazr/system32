@@ -1,0 +1,50 @@
+{
+  "title": "Leonisa",
+  "slug": "leonisa",
+  "category": "motion",
+  "order": 10,
+  "featured": true,
+  "year": 2026,
+  "client": "Leonisa",
+  "event": "",
+  "role": [
+    "Motion graphics",
+    "Animación 2D",
+    "Edición"
+  ],
+  "tools": [
+    "After Effects"
+  ],
+  "summary": "Motion graphics para Leonisa en formato vertical.",
+  "body": "Piezas animadas en 2D para redes, con tipografía y producto en movimiento.",
+  "credits": "",
+  "behance": "https://www.behance.net/gallery/242184947/LEONISA-MOTION-GRAPHICS",
+  "cover": "media/leonisa/01.mp4",
+  "media": [
+    {
+      "type": "video",
+      "src": "media/leonisa/01.mp4",
+      "poster": "media/leonisa/01.jpg",
+      "w": 720,
+      "h": 1280,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/leonisa/02.mp4",
+      "poster": "media/leonisa/02.jpg",
+      "w": 720,
+      "h": 1280,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/leonisa/03.mp4",
+      "poster": "media/leonisa/03.jpg",
+      "w": 720,
+      "h": 1280,
+      "caption": ""
+    }
+  ],
+  "pixelmap": null
+}

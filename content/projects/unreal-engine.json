@@ -1,0 +1,33 @@
+{
+  "title": "Unreal Engine",
+  "slug": "unreal-engine",
+  "category": "vr",
+  "order": 17,
+  "featured": false,
+  "year": 2025,
+  "client": "Exploración",
+  "event": "",
+  "role": [
+    "Animación 3D",
+    "Motion design"
+  ],
+  "tools": [
+    "Unreal Engine 5"
+  ],
+  "summary": "Animación y motion design en tiempo real con Unreal Engine 5.",
+  "body": "Exploraciones de cámara, luz y materiales renderizadas en tiempo real.",
+  "credits": "",
+  "behance": "https://www.behance.net/gallery/236775025/UNREAL-ENGINE",
+  "cover": "media/unreal-engine/01.mp4",
+  "media": [
+    {
+      "type": "video",
+      "src": "media/unreal-engine/01.mp4",
+      "poster": "media/unreal-engine/01.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    }
+  ],
+  "pixelmap": null
+}

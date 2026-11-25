@@ -1,0 +1,51 @@
+{
+  "title": "Motion graphics + VJ en vivo",
+  "slug": "motion-live-vj-show",
+  "category": "visuales",
+  "order": 8,
+  "featured": false,
+  "year": 2026,
+  "client": "Show en vivo",
+  "event": "",
+  "role": [
+    "Motion graphics",
+    "Intervención VJ"
+  ],
+  "tools": [
+    "After Effects",
+    "Resolume Arena",
+    "TouchDesigner"
+  ],
+  "summary": "Piezas de motion graphics intervenidas en vivo desde Resolume y TouchDesigner.",
+  "body": "El contenido se anima primero en After Effects y luego se rompe, se capa y se reinterpreta en tiempo real durante el show.",
+  "credits": "",
+  "behance": "https://www.behance.net/gallery/242642997/MOTION-GRAPHICS-AND-LIVE-VJ-SHOW",
+  "cover": "media/motion-live-vj-show/02.mp4",
+  "media": [
+    {
+      "type": "video",
+      "src": "media/motion-live-vj-show/01.mp4",
+      "poster": "media/motion-live-vj-show/01.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/motion-live-vj-show/02.mp4",
+      "poster": "media/motion-live-vj-show/02.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/motion-live-vj-show/03.mp4",
+      "poster": "media/motion-live-vj-show/03.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    }
+  ],
+  "pixelmap": null
+}

@@ -1,0 +1,128 @@
+{
+  "title": "Castrii — Escenario techno",
+  "slug": "castrii-techno-stage",
+  "category": "visuales",
+  "order": 3,
+  "featured": true,
+  "year": 2026,
+  "client": "Castrii",
+  "event": "MedaYoung · Medellín",
+  "role": [
+    "Diseño de escenario",
+    "Contenido 3D",
+    "Mapping Resolume"
+  ],
+  "tools": [
+    "Blender",
+    "After Effects",
+    "Resolume Arena"
+  ],
+  "summary": "Contenido a medida para una estructura LED en forma de cruz (lienzo de 1008 × 784): murciélagos, cadenas, eclipses y el logo de Castrii viviendo dentro de los brazos de la cruz.",
+  "body": "La pantalla no era un rectángulo: eran dos tiras LED cruzadas, una vertical de 112 × 784 px y una horizontal de 1008 × 112 px. Todo el contenido se animó en 3D sobre el lienzo completo para que cayera exacto dentro de la cruz, y se mapeó en Resolume Arena con dos slices (VERTICAL y HORIZONTAL) sobre la salida avanzada.",
+  "credits": "",
+  "behance": "",
+  "cover": "media/castrii-techno-stage/cruz-profundidad.mp4",
+  "media": [
+    {
+      "type": "video",
+      "src": "media/castrii-techno-stage/cruz-cadenas.mp4",
+      "poster": "media/castrii-techno-stage/cruz-cadenas.jpg",
+      "w": 1008,
+      "h": 784,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/castrii-techno-stage/cruz-eclipse.mp4",
+      "poster": "media/castrii-techno-stage/cruz-eclipse.jpg",
+      "w": 1008,
+      "h": 784,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/castrii-techno-stage/cruz-letras-random.mp4",
+      "poster": "media/castrii-techno-stage/cruz-letras-random.jpg",
+      "w": 1008,
+      "h": 784,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/castrii-techno-stage/cruz-letras-smear.mp4",
+      "poster": "media/castrii-techno-stage/cruz-letras-smear.jpg",
+      "w": 1008,
+      "h": 784,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/castrii-techno-stage/cruz-logo.mp4",
+      "poster": "media/castrii-techno-stage/cruz-logo.jpg",
+      "w": 1008,
+      "h": 784,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/castrii-techno-stage/cruz-murcielagos.mp4",
+      "poster": "media/castrii-techno-stage/cruz-murcielagos.jpg",
+      "w": 1008,
+      "h": 784,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/castrii-techno-stage/cruz-ojo.mp4",
+      "poster": "media/castrii-techno-stage/cruz-ojo.jpg",
+      "w": 1008,
+      "h": 784,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/castrii-techno-stage/cruz-profundidad.mp4",
+      "poster": "media/castrii-techno-stage/cruz-profundidad.jpg",
+      "w": 1008,
+      "h": 784,
+      "caption": ""
+    }
+  ],
+  "pixelmap": {
+    "rig": "cross",
+    "canvas": [
+      1008,
+      784
+    ],
+    "width": 11,
+    "bpm": 140,
+    "image": "media/castrii-techno-stage/pixelmap.png",
+    "label": "TECHNO-CROSS",
+    "slices": [
+      {
+        "name": "VERTICAL",
+        "x": 448,
+        "y": 0,
+        "w": 112,
+        "h": 784
+      },
+      {
+        "name": "HORIZONTAL",
+        "x": 0,
+        "y": 336,
+        "w": 1008,
+        "h": 112
+      }
+    ],
+    "playlist": [
+      "media/castrii-techno-stage/cruz-profundidad.mp4",
+      "media/castrii-techno-stage/cruz-cadenas.mp4",
+      "media/castrii-techno-stage/cruz-murcielagos.mp4",
+      "media/castrii-techno-stage/cruz-eclipse.mp4",
+      "media/castrii-techno-stage/cruz-ojo.mp4",
+      "media/castrii-techno-stage/cruz-letras-smear.mp4",
+      "media/castrii-techno-stage/cruz-logo.mp4",
+      "media/castrii-techno-stage/cruz-letras-random.mp4"
+    ]
+  }
+}

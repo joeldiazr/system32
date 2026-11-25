@@ -1,0 +1,101 @@
+{
+  "title": "Sophii Show",
+  "slug": "sophii-show",
+  "category": "visuales",
+  "order": 5,
+  "featured": false,
+  "year": 2025,
+  "client": "Sophii",
+  "event": "Concierto",
+  "role": [
+    "Animación",
+    "Visuales en vivo",
+    "VJ"
+  ],
+  "tools": [
+    "TouchDesigner",
+    "Blender",
+    "After Effects",
+    "Premiere Pro"
+  ],
+  "summary": "Animaciones y visuales en vivo para el concierto de Sophii.",
+  "body": "Contenido animado para la pantalla del concierto, combinando piezas 3D, motion graphics y procesos en TouchDesigner, operado en vivo durante el show.",
+  "credits": "",
+  "behance": "https://www.behance.net/gallery/236727843/SOPHII-SHOW",
+  "cover": "media/sophii-show/03.mp4",
+  "media": [
+    {
+      "type": "video",
+      "src": "media/sophii-show/01.mp4",
+      "poster": "media/sophii-show/01.jpg",
+      "w": 636,
+      "h": 360,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/sophii-show/02.mp4",
+      "poster": "media/sophii-show/02.jpg",
+      "w": 720,
+      "h": 1280,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/sophii-show/03.mp4",
+      "poster": "media/sophii-show/03.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/sophii-show/04.mp4",
+      "poster": "media/sophii-show/04.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/sophii-show/05.mp4",
+      "poster": "media/sophii-show/05.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/sophii-show/06.mp4",
+      "poster": "media/sophii-show/06.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/sophii-show/07.mp4",
+      "poster": "media/sophii-show/07.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/sophii-show/08.mp4",
+      "poster": "media/sophii-show/08.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/sophii-show/09.mp4",
+      "poster": "media/sophii-show/09.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    }
+  ],
+  "pixelmap": null
+}

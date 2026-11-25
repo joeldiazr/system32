@@ -1,0 +1,33 @@
+{
+  "title": "Showreel TouchDesigner",
+  "slug": "showreel-touchdesigner",
+  "category": "vr",
+  "order": 18,
+  "featured": true,
+  "year": 2025,
+  "client": "Reel",
+  "event": "",
+  "role": [
+    "Arte generativo",
+    "Creative coding"
+  ],
+  "tools": [
+    "TouchDesigner"
+  ],
+  "summary": "Reel de arte generativo y creative coding en TouchDesigner.",
+  "body": "Sistemas de partículas, feedback, ruido y audio-reactividad: piezas generadas en tiempo real.",
+  "credits": "",
+  "behance": "https://www.behance.net/gallery/232077239/SHOWREEL-TOUCHDESIGNER",
+  "cover": "media/showreel-touchdesigner/01.mp4",
+  "media": [
+    {
+      "type": "video",
+      "src": "media/showreel-touchdesigner/01.mp4",
+      "poster": "media/showreel-touchdesigner/01.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    }
+  ],
+  "pixelmap": null
+}

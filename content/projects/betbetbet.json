@@ -1,0 +1,32 @@
+{
+  "title": "BetBetBet",
+  "slug": "betbetbet",
+  "category": "motion",
+  "order": 12,
+  "featured": false,
+  "year": 2026,
+  "client": "BetBetBet",
+  "event": "",
+  "role": [
+    "Motion graphics"
+  ],
+  "tools": [
+    "After Effects"
+  ],
+  "summary": "Motion graphics para BetBetBet.",
+  "body": "Animación de marca en formato horizontal.",
+  "credits": "",
+  "behance": "https://www.behance.net/gallery/242795257/MOTION-GRAPHICS-BETBETBET",
+  "cover": "media/betbetbet/01.mp4",
+  "media": [
+    {
+      "type": "video",
+      "src": "media/betbetbet/01.mp4",
+      "poster": "media/betbetbet/01.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    }
+  ],
+  "pixelmap": null
+}

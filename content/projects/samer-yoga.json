@@ -1,0 +1,32 @@
+{
+  "title": "Samer Yoga — El sol sale para todos",
+  "slug": "samer-yoga",
+  "category": "motion",
+  "order": 13,
+  "featured": false,
+  "year": 2026,
+  "client": "Samer Yoga",
+  "event": "",
+  "role": [
+    "Animación 2D"
+  ],
+  "tools": [
+    "After Effects"
+  ],
+  "summary": "Animación para el lanzamiento de «El sol sale para todos», el nuevo producto de Samer Yoga.",
+  "body": "Una pieza sencilla y cálida en After Effects para acompañar el lanzamiento.",
+  "credits": "",
+  "behance": "https://www.behance.net/gallery/242571377/SAMER-YOGA-EL-SOL-SALE-PARA-TODOS",
+  "cover": "media/samer-yoga/01.mp4",
+  "media": [
+    {
+      "type": "video",
+      "src": "media/samer-yoga/01.mp4",
+      "poster": "media/samer-yoga/01.jpg",
+      "w": 720,
+      "h": 1280,
+      "caption": ""
+    }
+  ],
+  "pixelmap": null
+}

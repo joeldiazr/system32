@@ -1,0 +1,84 @@
+{
+  "title": "Fumaratto & Friends — La Solar",
+  "slug": "fumaratto-la-solar-2024",
+  "category": "visuales",
+  "order": 6,
+  "featured": false,
+  "year": 2024,
+  "client": "Fumaratto Ferroso",
+  "event": "La Solar 2024",
+  "role": [
+    "Diseño de escenario",
+    "Identidad visual",
+    "VJ"
+  ],
+  "tools": [
+    "Blender",
+    "After Effects",
+    "Resolume Arena"
+  ],
+  "summary": "Diseño visual y de escenario para Fumaratto Ferroso en La Solar 2024.",
+  "body": "Identidad visual para el festival, diseño del escenario en Blender y contenido para pantallas operado en vivo con Resolume Arena.",
+  "credits": "",
+  "behance": "https://www.behance.net/gallery/250514325/FUMARATTO-FRIENDS-LA-SOLAR-2024",
+  "cover": "media/fumaratto-la-solar-2024/01.mp4",
+  "media": [
+    {
+      "type": "video",
+      "src": "media/fumaratto-la-solar-2024/01.mp4",
+      "poster": "media/fumaratto-la-solar-2024/01.jpg",
+      "w": 360,
+      "h": 636,
+      "caption": ""
+    },
+    {
+      "type": "image",
+      "src": "media/fumaratto-la-solar-2024/02.jpg",
+      "poster": "media/fumaratto-la-solar-2024/02.thumb.jpg",
+      "w": 1800,
+      "h": 1200,
+      "caption": ""
+    },
+    {
+      "type": "image",
+      "src": "media/fumaratto-la-solar-2024/03.jpg",
+      "poster": "media/fumaratto-la-solar-2024/03.thumb.jpg",
+      "w": 1800,
+      "h": 1230,
+      "caption": ""
+    },
+    {
+      "type": "image",
+      "src": "media/fumaratto-la-solar-2024/04.jpg",
+      "poster": "media/fumaratto-la-solar-2024/04.thumb.jpg",
+      "w": 1800,
+      "h": 1200,
+      "caption": ""
+    },
+    {
+      "type": "image",
+      "src": "media/fumaratto-la-solar-2024/05.jpg",
+      "poster": "media/fumaratto-la-solar-2024/05.thumb.jpg",
+      "w": 1080,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "image",
+      "src": "media/fumaratto-la-solar-2024/06.jpg",
+      "poster": "media/fumaratto-la-solar-2024/06.thumb.jpg",
+      "w": 1080,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "image",
+      "src": "media/fumaratto-la-solar-2024/07.jpg",
+      "poster": "media/fumaratto-la-solar-2024/07.thumb.jpg",
+      "w": 1080,
+      "h": 720,
+      "caption": ""
+    }
+  ],
+  "pixelmap": null
+}

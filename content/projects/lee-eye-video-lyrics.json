@@ -1,0 +1,58 @@
+{
+  "title": "Lee Eye — Video lyrics",
+  "slug": "lee-eye-video-lyrics",
+  "category": "motion",
+  "order": 11,
+  "featured": false,
+  "year": 2025,
+  "client": "Lee Eye",
+  "event": "",
+  "role": [
+    "Video lyrics",
+    "Intervención en TouchDesigner"
+  ],
+  "tools": [
+    "After Effects",
+    "TouchDesigner"
+  ],
+  "summary": "Video lyrics para Lee Eye, artista multidisciplinar: las letras y la intervención del video en TouchDesigner.",
+  "body": "Sebastián hizo las letras animadas y la intervención del material en TouchDesigner. La animación 3D de base no es suya.",
+  "credits": "La animación 3D de base es de otro artista.",
+  "behance": "https://www.behance.net/gallery/239720139/LEE-EYE-VIDEO-LYRICS-AND-TOUCHDESIGNER",
+  "cover": "media/lee-eye-video-lyrics/01.mp4",
+  "media": [
+    {
+      "type": "video",
+      "src": "media/lee-eye-video-lyrics/01.mp4",
+      "poster": "media/lee-eye-video-lyrics/01.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/lee-eye-video-lyrics/02.mp4",
+      "poster": "media/lee-eye-video-lyrics/02.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/lee-eye-video-lyrics/03.mp4",
+      "poster": "media/lee-eye-video-lyrics/03.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/lee-eye-video-lyrics/04.mp4",
+      "poster": "media/lee-eye-video-lyrics/04.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    }
+  ],
+  "pixelmap": null
+}

@@ -1,0 +1,66 @@
+{
+  "title": "Trabajos freelance",
+  "slug": "freelance-works",
+  "category": "motion",
+  "order": 15,
+  "featured": false,
+  "year": 2024,
+  "client": "Varios",
+  "event": "",
+  "role": [
+    "Motion graphics",
+    "Edición"
+  ],
+  "tools": [
+    "After Effects",
+    "Premiere Pro"
+  ],
+  "summary": "Una selección de piezas freelance para marcas y artistas.",
+  "body": "Formatos verticales y horizontales para redes y pantallas.",
+  "credits": "",
+  "behance": "",
+  "cover": "media/freelance-works/05.mp4",
+  "media": [
+    {
+      "type": "video",
+      "src": "media/freelance-works/01.mp4",
+      "poster": "media/freelance-works/01.jpg",
+      "w": 720,
+      "h": 1280,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/freelance-works/02.mp4",
+      "poster": "media/freelance-works/02.jpg",
+      "w": 720,
+      "h": 1280,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/freelance-works/03.mp4",
+      "poster": "media/freelance-works/03.jpg",
+      "w": 720,
+      "h": 1280,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/freelance-works/04.mp4",
+      "poster": "media/freelance-works/04.jpg",
+      "w": 720,
+      "h": 1280,
+      "caption": ""
+    },
+    {
+      "type": "video",
+      "src": "media/freelance-works/05.mp4",
+      "poster": "media/freelance-works/05.jpg",
+      "w": 1280,
+      "h": 720,
+      "caption": ""
+    }
+  ],
+  "pixelmap": null
+}
