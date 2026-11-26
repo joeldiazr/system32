@@ -1,11 +1,12 @@
+// Portada (puerta de entrada, sin scroll) y hub de los 4 mundos (página aparte).
 import { site, worlds, projectsOf, projects, t, tr, asset, pad, isImg } from '../data.js';
 import { LedWall } from '../gl/ledwall.js';
 import { lenis } from '../ui/scroll.js';
 import { bindReveal, splitWords, scramble } from '../ui/fx.js';
 
-export function renderHome(app) {
+export function renderGate(app) {
   const el = document.createElement('div');
-  el.className = 'home';
+  el.className = 'gate';
   const roles = site.roleLine.split('·').map((s) => s.trim());
   el.innerHTML = `
   <section class="hero" aria-label="SYSTEM32">
@@ -26,10 +27,28 @@ export function renderHome(app) {
         <span class="dim hero-hint">${t('hint')}</span>
       </div>
     </div>
-  </section>
+  </section>`;
+  app.appendChild(el);
 
-  <div class="ticker" aria-hidden="true"><div class="ticker-track">${tickerItems()}${tickerItems()}</div></div>
+  const wall = new LedWall(el.querySelector('.hero-gl'), { video: asset('media/site/hero-loop.mp4') });
+  // Enter → directo a los mundos
+  const onKey = (e) => {
+    if (e.key !== 'Enter' || e.target?.closest?.('a, button, input, textarea')) return;
+    location.hash = '#/hub';
+  };
+  addEventListener('keydown', onKey);
+  const io = bindReveal(el);
 
+  return {
+    name: 'gate',
+    destroy() { wall.destroy(); removeEventListener('keydown', onKey); io.disconnect(); },
+  };
+}
+
+export function renderHub(app) {
+  const el = document.createElement('div');
+  el.className = 'home';
+  el.innerHTML = `
   <section class="hub" id="hub">
     <header class="hub-head">
       <p class="mono dim" data-reveal>( ${worlds.length} ${getWorldsWord()} · ${projects.length} ${t('projects')} )</p>
@@ -44,24 +63,26 @@ export function renderHome(app) {
         return `
         <a class="wcard" href="#/w/${w.id}" style="--wc:${w.accent}; --i:${i}" data-cursor="${t('enterWorld').toUpperCase()}">
           <div class="wcard-media">${media}</div>
-          <div class="wcard-top mono"><span class="wcard-n">${tr({ es: 'MUNDO', en: 'WORLD' })} ${w.index}</span><span class="dim">${w.coords}</span></div>
+          <div class="wcard-top mono"><span class="wcard-n">${tr({ es: 'MUNDO', en: 'WORLD' })} ${w.index}</span><span class="wcard-count">${pad(list.length)} ${t('projects')}</span></div>
           <div class="wcard-body">
             <h2 class="wcard-title" data-fit="125">${tr(w.name)}</h2>
             <p class="wcard-tag">${tr(w.tagline)}</p>
             <ul class="wcard-list mono">${list.slice(0, 5).map((p) => `<li>${p.title}</li>`).join('')}${list.length > 5 ? `<li class="dim">+${list.length - 5}</li>` : ''}</ul>
           </div>
-          <div class="wcard-foot mono"><span>${pad(list.length)} ${t('projects')}</span><span class="wcard-go">${t('enterWorld')} ↗</span></div>
+          <div class="wcard-foot mono"><span class="dim"><kbd>${i + 1}</kbd> ${w.coords}</span><span class="wcard-go">${t('enterWorld')} →</span></div>
         </a>`;
       }).join('')}
     </div>
   </section>
+
+  <div class="ticker" aria-hidden="true"><div class="ticker-track">${tickerItems()}${tickerItems()}</div></div>
 
   <section class="info" id="info">
     <p class="mono dim info-k" data-reveal>( ${tr(site.role)} )</p>
     <p class="statement" data-split>${tr(site.bio)}</p>
     <div class="info-cta" data-reveal>
       <a href="#/cv" class="pill" data-magnetic="0.25" data-scramble><span class="scr">${t('cv')} →</span></a>
-      <a href="#/indice" class="pill" data-magnetic="0.25" data-scramble><span class="scr">${t('index')} (${projects.length}) →</span></a>
+      <a href="#/contenidos" class="pill" data-magnetic="0.25" data-scramble><span class="scr">${t('index')} (${projects.length}) →</span></a>
       <p class="avail ${site.available ? 'on' : ''}"><i></i>${t('available')}</p>
     </div>
   </section>
@@ -70,27 +91,21 @@ export function renderHome(app) {
   `;
   app.appendChild(el);
 
-  // ---- hero LED
-  const wall = new LedWall(el.querySelector('.hero-gl'), { video: asset('media/site/hero-loop.mp4') });
-  const hero = el.querySelector('.hero');
-  const offScroll = lenis.on('scroll', ({ scroll }) => {
-    const p = Math.min(1, Math.max(0, scroll / (hero.offsetHeight * 0.9)));
-    wall.setScroll(p);
-    hero.style.setProperty('--p', p);
-  });
-
-  // ---- ticker: acelera con la velocidad del scroll
+  // ---- ticker: avanza solo y acelera con el scroll; quieto fuera de vista
   const track = el.querySelector('.ticker-track');
-  let tx = 0, rafT;
+  let tx = 0, rafT, tickerOn = false;
   const tick = () => {
+    rafT = requestAnimationFrame(tick);
+    if (!tickerOn) return;
     const v = lenis.velocity || 0;
     tx -= 0.6 + Math.abs(v) * 0.35;
     const half = track.scrollWidth / 2;
     if (-tx > half) tx += half;
     track.style.transform = `translate3d(${tx}px,0,0) skewX(${Math.max(-12, Math.min(12, -v * 0.4))}deg)`;
-    rafT = requestAnimationFrame(tick);
   };
   tick();
+  const ioT = new IntersectionObserver(([e]) => (tickerOn = e.isIntersecting));
+  ioT.observe(el.querySelector('.ticker'));
 
   // ---- tarjetas de mundo: video al pasar el cursor + inclinación 3D
   const fine = matchMedia('(hover: hover)').matches;
@@ -108,11 +123,19 @@ export function renderHome(app) {
     if (fine) c.addEventListener('pointermove', (e) => {
       const r = c.getBoundingClientRect();
       const x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
-      c.style.transform = `perspective(1100px) rotateY(${x * 5}deg) rotateX(${-y * 5}deg)`;
+      c.style.transform = `perspective(1100px) rotateY(${x * 4}deg) rotateX(${-y * 4}deg)`;
       c.style.setProperty('--mx', `${(x + 0.5) * 100}%`); c.style.setProperty('--my', `${(y + 0.5) * 100}%`);
     });
   });
   function play(v) { if (!v.src) v.src = v.dataset.src; v.play().catch(() => {}); }
+
+  // teclas 1–4 → entrar a cada mundo
+  const onKey = (e) => {
+    if (e.target?.closest?.('input, textarea') || e.metaKey || e.ctrlKey || e.altKey) return;
+    const w = worlds[+e.key - 1];
+    if (w) location.hash = `#/w/${w.id}`;
+  };
+  addEventListener('keydown', onKey);
 
   // ---- bio palabra por palabra
   const st = el.querySelector('[data-split]');
@@ -125,29 +148,21 @@ export function renderHome(app) {
     words.forEach((w, i) => w.classList.toggle('lit', i < n));
   });
 
-  // Enter en la portada → directo a los mundos
-  const onKey = (e) => {
-    if (e.key !== 'Enter' || e.target?.closest?.('a, button, input, textarea')) return;
-    if (hero.getBoundingClientRect().bottom > innerHeight * 0.5) location.hash = '#/hub';
-  };
-  addEventListener('keydown', onKey);
-
   bindContact(el);
   const io1 = bindReveal(el);
 
   return {
-    name: 'home',
+    name: 'hub',
     scrollTo(section, immediate) {
-      const target = section && el.querySelector('#' + section);
+      const target = section && section !== 'hub' && el.querySelector('#' + section);
       if (target) lenis.scrollTo(target, { offset: -70, duration: immediate ? 0 : 1.4, immediate: !!immediate });
-      else if (!section) lenis.scrollTo(0, { duration: 1.2 });
+      else lenis.scrollTo(0, { duration: immediate ? 0 : 1.2, immediate: !!immediate });
     },
     destroy() {
-      wall.destroy();
       removeEventListener('keydown', onKey);
       cancelAnimationFrame(rafT);
-      offScroll?.(); offWords?.();
-      io.disconnect(); io1.disconnect();
+      offWords?.();
+      io.disconnect(); io1.disconnect(); ioT.disconnect();
       el.querySelectorAll('video').forEach((v) => { v.pause(); v.removeAttribute('src'); v.load(); });
     },
   };

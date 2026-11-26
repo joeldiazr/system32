@@ -5,16 +5,20 @@ import { initCursor } from './ui/cursor.js';
 import { beat } from './ui/beat.js';
 import { bindScramble, bindMagnetic, wipe, reducedMotion, fitText } from './ui/fx.js';
 import { lenis } from './ui/scroll.js';
-import { renderHome } from './views/home.js';
-import { renderProject } from './views/project.js';
+import { renderGate, renderHub } from './views/home.js';
 import { renderIndex } from './views/index.js';
 import { renderCV } from './views/cv.js';
-import { renderStageWorld } from './views/world-stage.js';
-import { renderMotionWorld } from './views/world-motion.js';
-import { renderVRWorld } from './views/world-vr.js';
-import { renderGamesWorld } from './views/world-games.js';
 
-const WORLD_VIEWS = { stage: renderStageWorld, motion: renderMotionWorld, vr: renderVRWorld, games: renderGamesWorld };
+// los mundos y la página de proyecto (con su 3D pesado) se cargan solo cuando se abren
+const WORLD_VIEWS = {
+  stage: () => import('./views/world-stage.js').then((m) => m.renderStageWorld),
+  motion: () => import('./views/world-motion.js').then((m) => m.renderMotionWorld),
+  vr: () => import('./views/world-vr.js').then((m) => m.renderVRWorld),
+  games: () => import('./views/world-games.js').then((m) => m.renderGamesWorld),
+};
+const loadProject = () => import('./views/project.js').then((m) => m.renderProject);
+// precarga en segundo plano cuando el navegador está libre
+(window.requestIdleCallback || ((f) => setTimeout(f, 2500)))(() => { Object.values(WORLD_VIEWS).forEach((f) => f()); loadProject(); });
 const DEFAULT_ACCENT = '#FF4A1C';
 
 // ---------- HUD fijo
@@ -29,7 +33,7 @@ function drawHud() {
     ${worlds.map((w) => `<a href="#/w/${w.id}" data-r="w/${w.id}" style="--wc:${w.accent}"><i class="wd"></i><span class="mono">${w.index}</span> ${tr(w.shortName)}</a>`).join('')}
   </nav>
   <div class="hud-r">
-    <a href="#/indice" class="hud-link" data-r="indice" data-scramble><span class="scr">${t('index')}</span><sup>${pad(projects.length)}</sup></a>
+    <a href="#/contenidos" class="hud-link" data-r="contenidos" data-scramble><span class="scr">${t('index')}</span><sup>${pad(projects.length)}</sup></a>
     <a href="#/cv" class="hud-link" data-r="cv" data-scramble><span class="scr">CV</span></a>
     <button class="hud-lang mono" type="button" aria-label="Idioma / Language"><span data-l="es">ES</span><span data-l="en">EN</span></button>
     <button class="hud-bpm" type="button" title="Tap tempo" data-cursor="TAP"><i class="bpm-dot"></i><span class="bpm-val">${beat.bpm.toFixed(2)}</span><span class="bpm-u">BPM</span></button>
@@ -52,7 +56,9 @@ function drawHud() {
 
 function markActive() {
   const h = location.hash.replace(/^#\/?/, '') || '';
-  const key = h.startsWith('w/') ? h.split('/').slice(0, 2).join('/') : h.split('/')[0] || '';
+  let key = h.startsWith('w/') ? h.split('/').slice(0, 2).join('/') : h.split('/')[0] || '';
+  if (key === 'indice') key = 'contenidos';
+  if (key === 'contacto') key = 'hub';
   hud.querySelectorAll('[data-r]').forEach((a) => a.classList.toggle('on', a.dataset.r === key || (key === '' && a.dataset.r === 'hub' && false)));
 }
 
@@ -85,17 +91,17 @@ function parse() {
   const [a, b] = h.split('/');
   if (a === 'p' && b) return { name: 'project', id: decodeURIComponent(b) };
   if (a === 'w' && WORLD_VIEWS[b]) return { name: 'world', id: b };
-  if (a === 'indice') return { name: 'index' };
+  if (a === 'contenidos' || a === 'indice') return { name: 'index' };
   if (a === 'cv') return { name: 'cv' };
-  if (a === 'hub') return { name: 'home', section: 'hub' };
-  if (a === 'contacto') return { name: 'home', section: 'contacto' };
-  return { name: 'home' };
+  if (a === 'hub') return { name: 'hub' };
+  if (a === 'contacto') return { name: 'hub', section: 'contacto' };
+  return { name: 'gate' };
 }
 
 async function route(force = false) {
   const r = parse();
   markActive();
-  if (!force && r.name === 'home' && view?.name === 'home') { view.scrollTo?.(r.section); return; }
+  if (!force && r.name === 'hub' && view?.name === 'hub') { view.scrollTo?.(r.section); return; }
 
   const accentFor = () => {
     if (r.name === 'world') return worldOf(r.id).accent;
@@ -103,25 +109,32 @@ async function route(force = false) {
     return DEFAULT_ACCENT;
   };
   const accent = accentFor();
+  let render = null;
+  try {
+    if (r.name === 'world') render = await WORLD_VIEWS[r.id]();
+    if (r.name === 'project') render = await loadProject();
+  } catch { location.reload(); return; }
 
   const swap = () => {
     view?.destroy?.();
     app.innerHTML = '';
     document.body.classList.toggle('is-world', r.name === 'world');
     document.body.classList.toggle('is-scroll', r.name === 'world' && r.id === 'games');
+    document.body.classList.toggle('is-gate', r.name === 'gate');
     document.body.classList.remove('menu-open');
     document.documentElement.style.setProperty('--accent', accent);
     lenis.scrollTo(0, { immediate: true });
     if (r.name === 'project') {
       const p = projects.find((x) => x.id === r.id);
-      view = p ? renderProject(app, p) : renderHome(app);
+      view = p ? render(app, p) : renderHub(app);
       document.title = p ? `${p.title} — SYSTEM32` : 'SYSTEM32 — Sebastián Hincapié';
     } else if (r.name === 'world') {
-      view = WORLD_VIEWS[r.id](app);
+      view = render(app);
       document.title = `${tr(worldOf(r.id).name)} — SYSTEM32`;
     } else if (r.name === 'index') { view = renderIndex(app); document.title = `${t('index')} — SYSTEM32`; }
     else if (r.name === 'cv') { view = renderCV(app); document.title = `${t('cv')} — SYSTEM32`; }
-    else { view = renderHome(app); document.title = 'SYSTEM32 — Sebastián Hincapié'; }
+    else if (r.name === 'hub') { view = renderHub(app); document.title = `${t('hub')} — SYSTEM32`; }
+    else { view = renderGate(app); document.title = 'SYSTEM32 — Sebastián Hincapié'; }
     bindScramble(app); bindMagnetic(document);
     fitText(app); document.fonts.ready.then(() => fitText(app));
     lenis.resize();
@@ -133,6 +146,26 @@ async function route(force = false) {
 }
 
 addEventListener('hashchange', () => route());
+
+// clic en un enlace a la página donde ya estás: vuelve arriba (o a la sección) en vez de no hacer nada
+document.addEventListener('click', (e) => {
+  const a = e.target.closest?.('a[href^="#/"]');
+  if (!a || e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+  const norm = (h) => h.replace(/^#\/?/, '').replace(/\/$/, '');
+  if (norm(a.getAttribute('href')) !== norm(location.hash)) return;
+  e.preventDefault();
+  document.body.classList.remove('menu-open');
+  if (view?.scrollTo) view.scrollTo(parse().section);
+  else lenis.scrollTo(0, { duration: 1.2 });
+});
+
+// Esc dentro de un mundo o proyecto → vuelve al hub
+addEventListener('keydown', (e) => {
+  if (e.key !== 'Escape' || document.querySelector('.lightbox:not([hidden])')) return;
+  if (document.body.classList.contains('menu-open')) { document.body.classList.remove('menu-open'); return; }
+  const r = parse();
+  if (r.name === 'world' || r.name === 'index' || r.name === 'cv') location.hash = '#/hub';
+});
 onLang(() => { drawHud(); route('instant'); });
 
 // ---------- arranque

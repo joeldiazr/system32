@@ -5,7 +5,7 @@ Vite + Three.js, sin framework. Rutas con hash (`#/w/stage`, `#/p/castrii-techno
 
 ## Estructura
 
-- **Inicio:** pared LED interactiva «SYSTEM32» → hub con los 4 mundos.
+- **Inicio:** pared LED interactiva «SYSTEM32» de una sola pantalla; el botón **Entrar a los mundos** (o Enter) lleva al hub (`#/hub`). En el hub, las teclas 1–4 abren cada mundo y Esc vuelve desde cualquier mundo.
 - **Mundo 01 · Stage & VJ** (`#/w/stage`): escenario 3D con un canal por proyecto. Los proyectos con pixel map real montan su rig:
   - pantalla cuadrada 1:1 (Peterblue, Alba Franch),
   - cruz (Castrii),
@@ -16,7 +16,7 @@ Vite + Three.js, sin framework. Rutas con hash (`#/w/stage`, `#/p/castrii-techno
 - **Mundo 02 · Motion** (`#/w/motion`): estudio con composiciones, visor con timecode, línea de tiempo con keyframes y editor de curvas.
 - **Mundo 03 · VR & Real-time** (`#/w/vr`): red de nodos tipo TouchDesigner con visor estéreo.
 - **Mundo 04 · Videojuegos** (`#/w/games`): «press start» y cartuchos. Taw Breaker trae devlogs e impacto HDR; Opossum Atelier trae visor FBX con wireframe y comparador.
-- **Índice** (`#/indice`), **hoja de vida** (`#/cv`) y **página de proyecto** (`#/p/<id>`) con galería.
+- **Contenidos** (`#/contenidos`), **hoja de vida** (`#/cv`) y **página de proyecto** (`#/p/<id>`) con galería.
 - Bilingüe ES/EN (botón en el HUD).
 
 ## Correr en local

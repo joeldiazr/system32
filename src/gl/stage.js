@@ -18,6 +18,7 @@ import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js
 import { beat } from '../ui/beat.js';
 import { asset } from '../data.js';
 
+const WHITE = new THREE.Color(1, 1, 1);
 const ledVert = /* glsl */ `varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`;
 const ledFrag = /* glsl */ `
 uniform sampler2D map; uniform vec4 rect; uniform vec2 px; uniform float cab;
@@ -113,6 +114,16 @@ const makeVideo = () => {
   return { v, tex };
 };
 
+// calidad adaptativa compartida entre escenarios: si un equipo va lento, el siguiente
+// canal arranca ya en el nivel que funcionó
+const QUALITY = [
+  { pr: 1.25, mirror: true, bloom: true },
+  { pr: 1, mirror: true, bloom: true },
+  { pr: 0.85, mirror: false, bloom: true },
+  { pr: 0.7, mirror: false, bloom: false },
+];
+let qLevel = 0;
+
 export class Stage {
   constructor(container, pm, { onClip, onHoverSlice } = {}) {
     this.container = container;
@@ -126,8 +137,8 @@ export class Stage {
     this.glitch = 0;
     this.slicesHover = -1;
 
-    const renderer = (this.renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' }));
-    renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
+    const renderer = (this.renderer = new THREE.WebGLRenderer({ antialias: false, powerPreference: 'high-performance', stencil: false }));
+    renderer.setPixelRatio(Math.min(devicePixelRatio, QUALITY[qLevel].pr));
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 0.85;
     container.appendChild(renderer.domElement);
@@ -242,11 +253,16 @@ export class Stage {
 
     // ---- piso reflectivo atenuado
     const mirror = new Reflector(new THREE.PlaneGeometry(120, 120), {
-      textureWidth: Math.round(innerWidth * 0.5), textureHeight: Math.round(innerHeight * 0.5), color: 0x777777,
+      textureWidth: Math.round(innerWidth * 0.3), textureHeight: Math.round(innerHeight * 0.3), color: 0x777777,
     });
     mirror.rotation.x = -Math.PI / 2;
     scene.add(mirror);
     this.mirror = mirror;
+    // el reflejo se recalcula cada 2 cuadros (casi no se nota y ahorra un render completo)
+    const mirrorRender = mirror.onBeforeRender;
+    this.frame = 0;
+    mirror.onBeforeRender = (...a) => { if (this.frame % 2 === 0) mirrorRender.apply(mirror, a); };
+    mirror.visible = QUALITY[qLevel].mirror;
     const dim = new THREE.Mesh(new THREE.PlaneGeometry(120, 120), new THREE.MeshStandardMaterial({ color: 0x050506, roughness: 0.9, transparent: true, opacity: 0.82 }));
     dim.rotation.x = -Math.PI / 2; dim.position.y = 0.005;
     scene.add(dim);
@@ -268,7 +284,7 @@ export class Stage {
 
     // ---- cabezas móviles
     const coneLen = 18;
-    const coneG = new THREE.ConeGeometry(0.85, coneLen, 32, 1, true);
+    const coneG = new THREE.ConeGeometry(0.85, coneLen, 20, 1, true);
     coneG.translate(0, -coneLen / 2, 0);
     this.beams = [];
     const fixtureG = new THREE.BoxGeometry(0.3, 0.35, 0.3);
@@ -296,11 +312,11 @@ export class Stage {
     }
 
     // ---- humo
-    const hazeN = 520;
+    const hazeN = 240;
     const hp = new Float32Array(hazeN * 3);
     for (let i = 0; i < hazeN; i++) { hp[i * 3] = cx + (Math.random() * 2 - 1) * (span * 0.8 + 4); hp[i * 3 + 1] = Math.random() * (towerH + 2); hp[i * 3 + 2] = -2 + Math.random() * 18; }
     const hazeG = new THREE.BufferGeometry(); hazeG.setAttribute('position', new THREE.BufferAttribute(hp, 3));
-    this.haze = new THREE.Points(hazeG, new THREE.PointsMaterial({ size: 2.6, map: spriteTexture(), transparent: true, opacity: 0.018, depthWrite: false, blending: THREE.AdditiveBlending }));
+    this.haze = new THREE.Points(hazeG, new THREE.PointsMaterial({ size: 2.6, map: spriteTexture(), transparent: true, opacity: 0.03, depthWrite: false, blending: THREE.AdditiveBlending }));
     scene.add(this.haze);
 
     scene.add(new THREE.HemisphereLight(0x8890ff, 0x050505, 0.25));
@@ -342,6 +358,7 @@ export class Stage {
     composer.addPass(new RenderPass(scene, cam));
     this.bloom = new UnrealBloomPass(new THREE.Vector2(256, 256), 0.5, 0.45, 0.78);
     composer.addPass(this.bloom);
+    this.bloom.enabled = QUALITY[qLevel].bloom;
     composer.addPass(new OutputPass());
 
     this.sampler = document.createElement('canvas');
@@ -349,14 +366,17 @@ export class Stage {
     this.sctx = this.sampler.getContext('2d', { willReadFrequently: true });
     this.avg = new THREE.Color(1, 0.3, 0.1);
     this.avgTarget = new THREE.Color(1, 0.3, 0.1);
+    this.avgLight = new THREE.Color();
+    this.hitSlice = -1;
 
     this.ray = new THREE.Raycaster();
     this.pointer = new THREE.Vector2(9, 9);
     this.onMove = (e) => {
       const r = renderer.domElement.getBoundingClientRect();
       this.pointer.set(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1);
+      this.pointerDirty = true;
     };
-    this.onOut = () => this.pointer.set(9, 9);
+    this.onOut = () => { this.pointer.set(9, 9); this.pointerDirty = true; };
     renderer.domElement.addEventListener('pointermove', this.onMove);
     renderer.domElement.addEventListener('pointerleave', this.onOut);
 
@@ -441,9 +461,32 @@ export class Stage {
     } catch { /* sin cuadros todavía */ }
   }
 
-  loop() {
+  // mide el tiempo por cuadro y baja la calidad si el equipo no da ~45 fps
+  adapt(now) {
+    const dt = now - (this.lastNow || now);
+    this.lastNow = now;
+    if (dt <= 0 || dt > 250) return;
+    this.frame++;
+    if (this.frame < 45) return;
+    this.acc = (this.acc || 0) + dt; this.n = (this.n || 0) + 1;
+    if (this.n < 50) return;
+    const avg = this.acc / this.n;
+    this.acc = 0; this.n = 0;
+    if (avg > 23 && qLevel < QUALITY.length - 1) {
+      qLevel++;
+      const q = QUALITY[qLevel];
+      this.renderer.setPixelRatio(Math.min(devicePixelRatio, q.pr));
+      this.composer.setPixelRatio(this.renderer.getPixelRatio());
+      this.mirror.visible = q.mirror;
+      this.bloom.enabled = q.bloom;
+      this.resize();
+    }
+  }
+
+  loop(now = performance.now()) {
     this.raf = requestAnimationFrame(this.loop);
     if (!this.visible) return;
+    this.adapt(now);
     const t = this.clock.getElapsedTime();
     const env = beat.env();
     const ph = beat.phase();
@@ -462,9 +505,14 @@ export class Stage {
       if (a.t >= 1) this.camAnim = null;
     }
 
-    this.ray.setFromCamera(this.pointer, this.camera);
-    const hit = this.ray.intersectObjects(this.screens)[0];
-    const hi = hit ? hit.object.userData.slice : this.forcedHover ?? -1;
+    // raycast solo si el puntero o la cámara se movieron
+    if (this.pointerDirty || (this.pointer.x < 2 && this.frame % 6 === 0)) {
+      this.pointerDirty = false;
+      this.ray.setFromCamera(this.pointer, this.camera);
+      const hit = this.ray.intersectObjects(this.screens)[0];
+      this.hitSlice = hit ? hit.object.userData.slice : -1;
+    }
+    const hi = this.hitSlice >= 0 ? this.hitSlice : this.forcedHover ?? -1;
     if (hi !== this.slicesHover) { this.slicesHover = hi; this.onHoverSlice?.(hi); }
     this.screens.forEach((m, i) => {
       const u = m.material.uniforms;
@@ -474,12 +522,12 @@ export class Stage {
       u.uHover.value += ((i === hi ? 1 : 0) - u.uHover.value) * 0.15;
     });
 
-    const white = new THREE.Color(1, 1, 1);
+    this.avgLight.copy(this.avg).lerp(WHITE, 0.35);
     this.beams.forEach((b, i) => {
       const a = t * 0.55 + b.ph * Math.PI * 2;
       if (b.up) { b.pivot.rotation.z = b.side * (0.25 + Math.sin(a) * 0.22); b.pivot.rotation.x = 0.2 + Math.cos(a * 0.7) * 0.12; }
       else { b.pivot.rotation.z = Math.sin(a) * 0.55 + b.side * 0.1; b.pivot.rotation.x = -0.25 + Math.cos(a * 0.8) * 0.45; }
-      b.mat.uniforms.color.value.copy(i % 2 ? this.avg.clone().lerp(white, 0.35) : this.avg);
+      b.mat.uniforms.color.value.copy(i % 2 ? this.avgLight : this.avg);
       b.mat.uniforms.intensity.value = (b.up ? 0.12 : 0.15) * (0.7 + env * 0.6) + (this.strobe ? 0.15 : 0);
     });
 

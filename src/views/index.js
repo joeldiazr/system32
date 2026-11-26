@@ -1,4 +1,4 @@
-// Índice completo: los 23 proyectos en lista (con preview flotante) o grilla densa.
+// Contenidos: los 23 proyectos en lista (con preview flotante) o grilla densa.
 import { projects, worlds, worldOf, t, tr, asset, pad } from '../data.js';
 import { mouse } from '../ui/cursor.js';
 import { lenis } from '../ui/scroll.js';

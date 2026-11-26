@@ -35,7 +35,7 @@ export const tr = (v) => (v == null ? '' : typeof v === 'string' ? v : v[lang] ?
 
 const UI = {
   hub: { es: 'Hub', en: 'Hub' },
-  index: { es: 'Índice', en: 'Index' },
+  index: { es: 'Contenidos', en: 'Contents' },
   cv: { es: 'Hoja de vida', en: 'Résumé' },
   enterWorlds: { es: 'Entrar a los mundos', en: 'Enter the worlds' },
   enterWorld: { es: 'Entrar al mundo', en: 'Enter world' },

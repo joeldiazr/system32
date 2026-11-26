@@ -24,7 +24,7 @@ export function stageMarkup(pm, { label } = {}) {
   <aside class="pxmap">
     <div class="pxmap-tabs mono"><button class="on" data-mode="live">${t('signal')}</button><button data-mode="tpl">${t('template')}</button></div>
     <div class="pxmap-box" style="aspect-ratio:${cw}/${ch}">
-      <canvas class="pxmap-live" width="${Math.min(1024, cw)}" height="${Math.round((Math.min(1024, cw) * ch) / cw)}"></canvas>
+      <canvas class="pxmap-live" width="${Math.min(480, cw)}" height="${Math.round((Math.min(480, cw) * ch) / cw)}"></canvas>
       ${pm.image ? `<img class="pxmap-tpl" src="${asset(pm.image)}" alt="">` : `<canvas class="pxmap-tpl pxmap-gen" width="${cw}" height="${ch}"></canvas>`}
       <svg class="pxmap-svg" viewBox="0 0 ${cw} ${ch}" preserveAspectRatio="none">
         ${pm.slices.map((s, i) => `<g class="sl" data-i="${i}"><rect x="${s.x}" y="${s.y}" width="${s.w}" height="${s.h}"/></g>`).join('')}
@@ -33,9 +33,9 @@ export function stageMarkup(pm, { label } = {}) {
     </div>
     <p class="mono dim pxmap-foot">${pm.hardware || 'Resolume Arena · Advanced Output'}${pm.bpm ? ' · ' + pm.bpm + ' BPM' : ''}</p>
   </aside>
-  <div class="deck" role="list" aria-label="${multi ? t('scenes') : t('clips')}">
+  <div class="deck-wrap"><p class="deck-k mono">${multi ? t('scenes') : t('clips')} <b>${pad(items.length)}</b><span class="dim"> · [ ]</span></p><div class="deck" role="list" aria-label="${multi ? t('scenes') : t('clips')}" data-lenis-prevent>
     ${items.map((it, k) => `<button class="ch" role="listitem" data-k="${k}" data-cursor="CH ${pad(k + 1)}"><img src="${thumb(it)}" alt="" loading="lazy"><span class="mono">${multi ? it.label : 'CH ' + pad(k + 1)}</span></button>`).join('')}
-  </div>`;
+  </div></div>`;
 }
 
 export function mountStage(root, pm, title = '') {
@@ -79,7 +79,8 @@ export function mountStage(root, pm, title = '') {
 
   const mapBtn = root.querySelector('.sc-map');
   const aside = root.querySelector('.pxmap');
-  if (innerWidth < 760) { mapBtn.classList.remove('on'); aside.classList.add('off'); }
+  // el pixel map se abre solo en rigs con plano real (el de festival es genérico)
+  if (innerWidth < 760 || pm.rig === 'festival') { mapBtn.classList.remove('on'); aside.classList.add('off'); }
   mapBtn.addEventListener('click', () => { mapBtn.classList.toggle('on'); aside.classList.toggle('off'); });
 
   [...svgG, ...labels].forEach((g) => {
@@ -102,9 +103,11 @@ export function mountStage(root, pm, title = '') {
   const lctx = live.getContext('2d');
   const k = live.width / pm.canvas[0];
   let rafL;
-  const drawLive = () => {
+  let lastL = 0;
+  const drawLive = (now = 0) => {
     rafL = requestAnimationFrame(drawLive);
-    if (aside.classList.contains('off') || box.dataset.mode !== 'live') return;
+    if (aside.classList.contains('off') || box.dataset.mode !== 'live' || now - lastL < 40) return;
+    lastL = now;
     lctx.fillStyle = '#0b0b0d'; lctx.fillRect(0, 0, live.width, live.height);
     if (!stage.multi) {
       const v = stage.video;
@@ -117,6 +120,15 @@ export function mountStage(root, pm, title = '') {
   };
   drawLive();
   cleanups.push(() => cancelAnimationFrame(rafL));
+
+  // deck: la rueda vertical (o el trackpad) desplaza la fila de clips en horizontal
+  const deck = root.querySelector('.deck');
+  const onDeckWheel = (e) => {
+    if (Math.abs(e.deltaY) <= Math.abs(e.deltaX) || deck.scrollWidth <= deck.clientWidth) return;
+    e.preventDefault();
+    deck.scrollLeft += e.deltaY;
+  };
+  deck.addEventListener('wheel', onDeckWheel, { passive: false });
 
   return { stage, destroy() { stage.destroy(); cleanups.forEach((f) => f()); } };
 }
